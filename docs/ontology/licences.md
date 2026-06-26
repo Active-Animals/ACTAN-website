@@ -1,4 +1,4 @@
-# Active Animals Ontology (AAO)
+# Active Animals Ontology (ACTAN)
 
 Welcome! We're all about classifying animal behaviour and cataloguing observations.
 
