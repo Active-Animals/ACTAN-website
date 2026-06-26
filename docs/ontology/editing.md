@@ -1,4 +1,4 @@
-# Active Animals Ontology (AAO)
+# Active Animals Ontology (ACTAN)
 
 Welcome! We're all about classifying animal behaviour and cataloguing observations.
 
@@ -18,7 +18,7 @@ Please see the footnote if you want to suggest edits to this website.[^1]
 
 #### Login
 1. You need your own account to use WebProtégé. You can Sign Up or Sign In [here](https://webprotege.stanford.edu/#login).
-2. Contact the AAO manager with your new username, to receive an invite to the project in WebProtégé. (In the Alpha phase, there may be restrictions even on the number of viewers or commenters, let alone editors. You may be asked to explain how you can contribute before being given an invitation. You may want to get this agreement before creating a WebProtégé account.)
+2. Contact the ACTAN manager with your new username, to receive an invite to the project in WebProtégé. (In the Alpha phase, there may be restrictions even on the number of viewers or commenters, let alone editors. You may be asked to explain how you can contribute before being given an invitation. You may want to get this agreement before creating a WebProtégé account.)
 3. On your Projects list page, ensure that the 'Shared with Me' box is ticked. If you have been invited to the project, it should appear there as 'Active Animals ALPHA', although you may need to refresh the page, or even log back in if the page has expired.
 4. Open the project by clicking the project's name, or find more opening options in the hamburger button.
   - You can download your own legacy copies as often as you like: the project has a CC0 license and the file can be read by any owl/rdf/xml viewer.
