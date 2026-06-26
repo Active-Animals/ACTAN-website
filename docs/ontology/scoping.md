@@ -1,4 +1,4 @@
-# Active Animals Ontology (AAO)
+# Active Animals Ontology (ACTAN)
 
 Welcome! We're all about classifying animal behaviour and cataloguing observations.
 
@@ -19,7 +19,7 @@ In 2011, a comprehensive, new ontology was launched. Called the [Neuro-Behaviour
   <a href="https://github.com/obo-behavior/behavior-ontology/issues/126#issuecomment-1397651952">Chris Mungall</a>
 </p>
 
-The AAO takes in a large scope, but with a more focused use case, not dependant on funding, and able to move forward without so many restrictions. It will undoubtedly have its gaps and failings. But unless it is replaced by something more water tight, it should provide at least a raft for those of us otherwise left to flounder.
+The ACTAN takes in a large scope, but with a more focused use case, not dependant on funding, and able to move forward without so many restrictions. It will undoubtedly have its gaps and failings. But unless it is replaced by something more water tight, it should provide at least a raft for those of us otherwise left to flounder.
 
 By taking a public domain approach, we hope it will also provide leads to promising new avenues of ethological research. We hope this can then lead to highly collaborative forms of citizan science.
 
