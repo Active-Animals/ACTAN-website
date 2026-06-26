@@ -1,4 +1,4 @@
-# Active Animals Ontology (AAO)
+# Active Animals Ontology (ACTAN)
 
 Welcome! We're all about classifying animal behaviour and cataloguing observations.
 
@@ -8,7 +8,7 @@ The study of the mechanisms, development, evolution and function of behaviour is
 
 On our [SCOPING](scoping) page, you can find out more about our situation assessment, including the need for, and history of the project.
 
-Having undergone a closed, primordial development phase, the AAO project is now open for Alpha testing and redesign. Those interested in animal behaviour, and who are willing to contribute directly, are invited to collaborate. [Sister projects](#what-about-observations-and-examples) are also being developed to test the use of labelling developed here, for annotating searchable repositories of animal behaviour records, most notably at [iNaturalist](https://www.inaturalist.org). Collaborators are also being sought, who are able to test and extend these sister projects to their own records in various repositories, such as [xeno-canto](https://xeno-canto.org).
+Having undergone a closed, primordial development phase, the ACTAN project is now open for Alpha testing and redesign. Those interested in animal behaviour, and who are willing to contribute directly, are invited to collaborate. [Sister projects](#what-about-observations-and-examples) are also being developed to test the use of labelling developed here, for annotating searchable repositories of animal behaviour records, most notably at [iNaturalist](https://www.inaturalist.org). Collaborators are also being sought, who are able to test and extend these sister projects to their own records in various repositories, such as [xeno-canto](https://xeno-canto.org).
 
 ***If you would like to collaborate, check out the section: [Can I contribute?](#can-i-contribute)***
 
@@ -32,13 +32,13 @@ A secondary use case is that of professional researchers into animal behaviour. 
   <a href="https://github.com/jamesaoverton/obo-tutorial/blob/master/docs/obo.md">James A Overton</a>
 </p>
 
-#### What is the AAO?
+#### What is the ACTAN?
 
 This is an editable reference ontology for animal behaviours. It defines, labels, and interconnects potentially discernible actions and functional contexts. Using scientific references, it attempts to provide an internally consistent framework for classifying assertions which have been made about these behaviours.
 
 In addition, it offers a range of non-behavioural classes (e.g. qualities), mainly imported from other ontologies, which can help situate certain behaviours.
 
-#### What isn't the AAO?
+#### What isn't the ACTAN?
 
 This is not a reference for potentially maladaptive behaviours, and excludes so-called abnormal, aberrant, deficient, pathological, diseased, phenotypic, or impaired behaviour. We acknowledge that some acute stress-related behaviours are adaptive and so include them, but that chronic stress leads to maladaptive or compensatory behaviours, which we therefore do not include.
 
@@ -62,7 +62,7 @@ NB: You may offer edits to this Introduction or the Editing page too, although a
 
 The Active Animal's ontology structure and edit history is saved as a project in Stanford University's [WebProtégé](https://webprotege.stanford.edu) server. In this Alpha development phase, it is only visible to shared users who are accredited as collaborators. 
 
-WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). A download of the current WebProtégé AAO project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software, but offline edits do not presently have a merging process.
+WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). A download of the current WebProtégé ACTAN project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software, but offline edits do not presently have a merging process.
 
 In the Beta phase, we hope to provide an easier tool for users to locate appropriate labels for applying to their own observation records. By the end of the Alpha phase, we will regularly upload versions to [Bioportal](https://bioportal.bioontology.org) and this will provide an interim search solution to users without access to the WebProtégé project.
 
