@@ -100,18 +100,18 @@ Annotations allow us to understand more about a given class. It may give informa
 
 ### Definitions
 
-Sooner or later, every class should have a useful definition. The primordial structure contains many without definitions and these are a priority for completing. New terms from the Alpha stage onwards should generally be proposed alongside a well researched definition.
+Every class should have a sourced definition, even if it has been interpolated from more general text. Use the Annotation hasDefinition.
 
 For more detailed guidelines, many of which have informed ours below, see the paper on[Guidelines for writing definitions in ontologies](https://revista.ibict.br/ciinf/article/view/4015)
 
 #### Meaning
-Before starting, consider whether your new definition will change the meaning of the class's ground concept (note that the two are not always identical). This can be broadly assessed by considering the existing label, examples, comments, scope notes, properties, and any sources referred to already.
+Before starting, consider whether your new definition will change the meaning of the class's ground concept. (The two are not always identical). This can be broadly assessed by considering the existing label, parent, children, siblings, examples, comments, scope notes, properties, and any sources referred to already.
 
 Be more wary if there is already a textual definition and you wish to change it: consider whether your new definition will be inclusive of it (i.e. is your new definition more general, NOT more specific).
 
 Lastly, consider whether your definition will directly aid (or improve) the identification of the behaviour in question. If all these issues are answered positively, go ahead.
 
-NB: A very strict form of ontological reasoning will argue that there is no intrinsic difference between a concept and an accurate axiomatic definition. Therefore changing the concept will necessarily require changing a logical definition, which must necessarily require creation of a new term. However, humanly useable ontologies like ours do not fully axiomatise their 'ground concepts' in the form of logical definitions, and unless written strictly for machine learning, what we are doing is generally accepted.
+NB: A very strict form of ontological reasoning will argue that there is no intrinsic difference between a concept and an accurate axiomatic definition. Therefore changing the concept will necessarily require changing a logical definition, which must necessarily require creation of a new term. However, humanly useable ontologies like ours do not fully axiomatise their 'ground concepts' in the form of logical definitions. Because they are not written strictly for machine learning, what we are doing is generally accepted.
 
 #### Constructing
 Ignoring the parts in (rounded brackets), use the construction:
@@ -123,40 +123,34 @@ Use the immediate binomial or trinomial for Y if it will aid understanding, e.g.
   - Y is linguistically referred to as the genus.
   - Z is linguistically referred to as the differentia(e); there may be more than one).
 
-#### Quoting
-Where a source is essentially being quoted for the definition, annotate with rdfs:isDefinedBy and hasDefinition. Sub-annotate hasDefinition with dc:source and skos:scopeNote (quoting the whole sentence or sentences from which the definition is drawn). There is no need to add dc:contributor as a sub-annotation to the definition, but by all means add it as a term annotation.
-
-Use [square brackets] to add the label for Y (the genus) if it is not in the quoted section of the source, but no quote marks.
+#### Creating
+Where a source is essentially being quoted for the definition, sub-annotate with rdfs:isDefinedBy and skos:scopeNote (quoting the whole sentence or sentences from which the definition is drawn). There is no need to add dc:contributor as a sub-annotation to the definition, but by all means add it as a top term Annotation.
 
 Limited edits may be needed, such as modifying word endings, or cutting and splicing very close elements contained within a single sentence (or possibly adjoining sentences), and preferably without reversing word order.
 
 A quoted definition may be made more parsimonious by dropping a superfluous component, but not if it simply generalises the definition (i.e. not if the dropped component would effectively create a sub-division). Word changes should also be avoided, particularly if the definition would be made more generic (e.g. by changing 'fish' to 'animal').
 
-Otherwise, even if the bulk of the definition comprises quotes, use hasDefinition, with dc:source and dc:contributor as sub-annotations (and avoid rdfs:isDefinedBy); see [Creating](#creating).
+Otherwise, even if the bulk of the definition comprises quotes, use hasDefinition, with dc:source and dc:contributor as sub-annotations (and avoid rdfs:isDefinedBy).
 
-#### Creating
-Annotate with hasDefinition, and sub-annotate that with dc:source and dc:contributor (even if you are the creator of the term). Every definition must be sourced, even if not quoted.
+Where more than one source is used to create a definition, give each as a sub-annotated dc:source. This should only rarely be needed.
 
-#### Multi-sourcing
-Where more than one source is used to create a definition, give each as a sub-annotated dc:source. Also quote from each as a skos:scopeNote, but add the source in brackets to link it back, because sub-sub-annotating is not possible in WebProtégé.
+REMEMBER: Every definition must be sourced, even if not quoted.
 
 #### Expanding
-To expand the definition beyond its essential core, either use additional text following a full-stop (rather than a comma, colon, or semicolon), or offer a skos:scopeNote annotation.
+To expand the definition beyond its essential core, use additional text following a full-stop (rather than a comma, colon, or semicolon).
 
 #### Tautology
-Do not use the term label or its root within its own definition, unless in a clarifiying sentence after the first full-stop. An exception may occur where the label is apparently partly composed from its actual or potential ontological parents, parts, participants, or attributes (e.g. terrestrial-lateral-undulating). Another is where the label is one of a set of invariant and exclusive subdivisions (e.g. spawning may only involve eggs or sperm). In any case, remain open to adopting alternative terminology.
+Do not use the term label or its root within its own definition, unless in a clarifiying sentence after the first full-stop. An exception may occur where the label is apparently partly composed from its actual or potential ontological parents, parts, participants, or attributes (e.g. terrestrial-lateral-undulating). Another exception is where the label is one of a set of invariant and exclusive subdivisions (e.g. spawning may only involve eggs or sperm). In any case, remain open to adopting alternative terminology.
 
 NB: Some judgement may be needed about how far back roots should be sought (e.g. are feign and feint from separate French words or the same Latin word), but try to avoid a debate if possible.
 
 #### Multi-parenting
-All parents must be referred to in the definition. It may be most appropriate to select one as genus and use the others as differentia to form a composite definition. In this case, do not offer a dc:source, but use hasDefinition with dc:contributor embedded, and rdfs:comment embedded noting that the definition is a composite.
-
-The ontology is currently moving towards the goal of single parenthood, with subsidiary parthood. Older terms are most likely to remain unamended for some time, but new terms will need to strongly justify multi-parenting.
+The ontology has adopted a single parenthood policy, with subsidiary parthood. Multi-parenting for new terms should be avoided.
 
 #### Para-synonymy
-Using a synonym in a simplistic definition is tempting and perhaps unavoidable at times. But it is too close to being tautology for the long term, and should be avoided in the first place if possible. (The definition is ideally some kind of expanded explanation.)
+Using a synonym in a simplistic definition is tempting and perhaps unavoidable at times. But it is too close to being tautology, and should be avoided  if possible. (The definition is ideally some kind of expanded explanation.)
 
-If needed, change the synonym type to hasRelatedSynonym as a workaround which will also highlight its deliberate use, but don't just delete the synonym in order to reintroduce it to the definition.
+Consider changing such a synonym type to hasRelatedSynonym as a workaround which will also highlight its deliberate use, but don't just delete the synonym in order to reintroduce it to the definition.
 
 ### Synonyms
 
