@@ -123,6 +123,8 @@ Use the immediate binomial or trinomial for Y if it will aid understanding, e.g.
   - Y is linguistically referred to as the genus.
   - Z is linguistically referred to as the differentia(e); there may be more than one).
 
+NB: A class definition's genus is its parent's binomen, although this may be abbreviated to the parent's first name if the meaning is clear.
+
 #### Creating
 Where a source is essentially being quoted for the definition, sub-annotate with rdfs:isDefinedBy and skos:scopeNote (quoting the whole sentence or sentences from which the definition is drawn). There is no need to add dc:contributor as a sub-annotation to the definition, but by all means add it as a top term Annotation.
 
@@ -204,7 +206,7 @@ Use the Individual tab in WebProtégé, or the Individuals by Class view in any 
 #### Preparing
 Your new class should represent a unique concept, not merely a unique label. Indeed, the label could be changed later, but the 'thing' that is the class should never change. (If it is superceded later, it may be [deprecated](#obsoletions), and a new class should be created, even if it has the same label, and a link can be made to the deprecated class to show it has been replaced.) 
 
-Search the ontology thoroughly for classes which may duplicate your concept, even if using different wording, and if they need modifying without changing the meaning, an edit there may be the best way forward. As long as there is still no exclusive definition, it may be possible to modify the class's concept (e.g. inclusive definitions might be changed, or subdivisions added).
+Search the ontology thoroughly for classes which may duplicate your concept, even if using different wording, and if they need modifying without changing the inclusive meaning, an edit there may be the best way forward.
 
 Except in justifiable cases (e.g. 'instinct' which has a long pedigree and is widely known), try not to create new classes just to suggest they are inactive. Our initiative is not trying to track every discredited idea that has ever been dreamt up about behaviour, but ideas which help explain where we are now, and how we got here.
 
@@ -222,19 +224,10 @@ If you want to create new terms, ask the manager to allocate you a batch of ID c
 
 Select a parent class (you can change it later), click the Create button, and write a label which is unique to the behaviour branch of the ontology. (WebProtégé will auto-insert the ID and IRI, and the created_by and creation-date annotations.) 
 
-If the label must duplicate a non-behaviour branch label, here is a trick learned the hard way:
-  1. first create it with a mis-spelling;
-  2. when the class has been created and saved, correct the spelling, but not immediately;
-  3. there may be some delay as WebProtégé catches up with itself internally;
-     - too soon, and it may list both as labels alongside each other;
-       - in this case, go back and delete the superfluous one;
-     - otherwise autofill will simply insert the other class with the same name;
-       - if this happens by mistake, do not compound the error by deleting the pre-existing class;
-       - instead delete its mistaken parent in its own parent's list;
-  4. and then refresh your view
+#### Binomial form
+Our binomial labelling system is anthroponymic (quasi-patronymic/matronymic): a class's first name is novel and its second name is usually its immediate superclass's (parent's) first name. (In special disposition-associated cases, where a subdivision involves a single hyphenated name), the part of the name after the hyphen may be carried forward through the sub-branches.)
 
-#### Word form
-Try to select a word form for the new term, such that it can form a meaningful binomial as both parent and child, when spoken in the word order subclass > superclass, with the option to complete the phrase with a high level term such as 'behaviour' (e.g. singing vocal behaviour, vocal acoustic behaviour, acoustic signaling).
+Among behaviours, every effort is being made to ensure that we only use nouns and gerunds in names, although there will be some (hopefully interim) labels where it is difficult to replace an adjective (e.g. demersal spawning and pelagic spawning). Whilst some labels appear to scan as comfortable adjective/noun combinations because of gerund placements or as familiar adjunct nouns, others will appear jarring word combinations. Remember that the binomen is not designed to be either in principle, and uncomfortable names in this context are expected to crop up often, not least if an adjective/adjunct/noun construction was anticipated but didn't materialise.
 
 #### Sourcing
 The term itself should be sourced if possible (although a slightly different word form is okay). A sub-annotation should be added with a dc:source. If the term can only (but easily) be inferred from a source, add an rdfs:comment as a sub-annotation.
