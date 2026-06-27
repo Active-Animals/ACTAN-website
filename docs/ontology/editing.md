@@ -269,7 +269,7 @@ The number of examples should be very constricted, preferably to one overall, bu
 Most important are production values (clarity, aesthetics, story, etc) and utility (accessibility, comprehensiveness), with age-related features only being key if they have some historical weight (e.g. a classic photo).
 
 ##### TYPES
-This should be the earliest AAO-user example that clearly shows the behaviour in question. This is both an incentive and a credit to those of us for whom this is our hobby.
+This should be the earliest ACTAN-user example that clearly shows the behaviour in question. This is both an incentive and a credit to those of us for whom this is our hobby.
 
 #### Top classes
 Several key principles apply to successful ontologies. They should be:
@@ -280,17 +280,15 @@ Several key principles apply to successful ontologies. They should be:
   <a href="https://doi.org/10.1038/nbt1346">OBO Foundry (Smith et al)</a>
 </p>
 
-Accordingly, we have reused classes defined in other ontologies for our top level classes:
-
-  - GO:0007610 behavior, comes from a primordial ontology called the Gene Ontology (GO), and is widely reused amongst other ontologies. Its core is borrowed directly from a 2009 paper, doi:10.1016/j.anbehav.2009.03.018
-
-    NB: behavior in GO is defined as a process, and as such it is a branch of an almost fundamental ontological category: 'occurrent'. This group is defined as, "An entity that has temporal parts and that happens, unfolds or develops through time." For now we have avoided using the category in the ontology, being loathe to allow 'behavior' to disappear from first line view of users.
+Accordingly, we have reused some top-level classes defined in other ontologies:
 
   - BFO:0000002 continuant, is contradistinct to 'occurrent'. It lies at the heart of several sub-branches, not least a key ontology called the Phenotype And Trait Ontology (PATO) with its branch PATO:0000001 quality. Continuants should all be imported in this ontology.
 
   - Several other imported process branches line up alongside behavior because they too are occurrents, but they are less critical to understanding our ontology terms: 'environmental system process', 'life cycle stage', and 'mental process'.
 
-Many of our terms could have been reused from the [Neuro-Behavioural Ontology](https://www.ebi.ac.uk/ols4/ontologies/nbo) (NBO). However most terms there don't match our criteria for proper definition, or come without an appropriate external reference. Furthermore, the ontology has not been owned and maintained effectively for many years. Indeed, some efforts have been made to obsolete its terms in favour of near equivalents in other ontologies, or to transfer ownerships to other ontologies, not least from its phenotype branch. Hypothetically, the same could apply to many of the terms on its behavior branch in favour of our ontology. Hence, in due course, we hope to annotate many terms with rdfs:seeAlso or hasDbXref [NBO_???????], but do not plan to import any NBO term.
+Many of our terms could have been reused from the [Neuro-Behavioural Ontology](https://www.ebi.ac.uk/ols4/ontologies/nbo) (NBO). However most terms there don't match our criteria for proper definition, or come without an appropriate external reference. Furthermore, the ontology has not been owned and maintained effectively for many years. Indeed, some efforts have been made to obsolete its terms in favour of near equivalents in other ontologies, or to transfer ownerships to other ontologies, not least from its phenotype branch. Hypothetically, the same could apply to many of the terms on its behavior branch in favour of our ontology. Hence, we have already annotated many terms with a SKOS match annotation, and we would encourage the same consideration to be given to any new ACTAN term. But we do not plan to import any NBO term.
+
+  - GO:0007610 behavior, comes from a primordial ontology called the Gene Ontology (GO), and is widely reused amongst other ontologies. Its core is borrowed from a 2009 paper, doi:10.1016/j.anbehav.2009.03.018 but in a limited form not in the origianl. Hence out highest level term (behaviour) directly quotes the original paper, and lists the GO term as  a SKOS:closeMatch.
 
 ### Relationships
 
@@ -309,9 +307,9 @@ Bear in mind before adding the relation, that the class which has_ part another 
 NB: A Reasoner in Desktop Protégé may not flag misuse of this object property, because it is inherently defined rather loosely, and needs additional axioms to raise flags.
 
 ##### part_of
-This should only be used when relating two pieces of data of the same type. In our case, one behaviour may be part_of another behaviour, because both are occurrents. (Similarly, one anatomical structure may be part_of another one, because both are continuants.)
+This should not currently be used in our ontology to reduce confusion, but would be used when relating two pieces of data of the same type. E.g. one behaviour may be part_of another behaviour, because both are occurrents. (Similarly, one anatomical structure may be part_of another one, because both are continuants.)
 
-Bear in mind before adding the relation, that the class which is part_of another class must ALWAYS be so to be axiomatically correct. This is the inverse relation of [has_part](#has_part)
+Bear in mind that the class which is part_of another class must ALWAYS be so to be axiomatically correct. This is the inverse relation of [has_part](#has_part)
 
 NB: A Reasoner in Desktop Protégé may not flag misuse of this object property, because it is inherently defined rather loosely, and needs additional axioms to raise flags.
 
@@ -321,9 +319,9 @@ This should only be used when relating an occurrent to a continuant, and even th
 Bear in mind before adding the relation, that the class which has_participant another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [participates_in](#participates_in).
 
 ##### participates_in
-This should only be used when relating a continuant to an occurrent, and even then, only in one direction (continuant participates_in occurrent ). It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
+This should not currently be used in our ontology to reduce confusion, but would be used when relating a continuant to an occurrent, and even then, only in one direction (continuant participates_in occurrent ). It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
 
-Bear in mind before adding the relation, that the class which participates_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [has_participant](#has_participant).
+Bear in mind that the class which participates_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [has_participant](#has_participant).
 
 ##### realizes
 This should only be used when an occurrent relates to a realizable entity (a special type of continuant), i.e. occurrent realizes realizable entity.
@@ -331,47 +329,27 @@ This should only be used when an occurrent relates to a realizable entity (a spe
 Bear in mind before adding the relation, that the class which realizes another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [realized_in](#realized_in).
 
 ##### realized_in
-This should only be used when a realizable entity (a special type of continuant) relates to an occurrent, i.e. realizable entity realized_in occurrent.
+This should not currently be used in our ontology to reduce confusion, but would be used when a realizable entity (a special type of continuant) relates to an occurrent, i.e. realizable entity realized_in occurrent.
 
-Bear in mind before adding the relation, that the class which is realized_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [realizes](#realizes).
-
-##### characteristic_of
-This should only be used when relating two pieces of continuant data. This will never be behaviour and may not happen at all in our ontology.
-
-Bear in mind before adding the relation, that the class which is characteristic of another class must ALWAYS be so to be axiomatically correct. This is the inverse relation of [has_characteristic](#has_characteristic).
-
-##### has_characteristic
-This should only be used when relating two pieces of continuant data. This will never be behaviour and will probably only happen in the rare instance where we have created a 'configuration' or an 'environmental situation'.
-
-Bear in mind before adding the relation, that the class which has_characteristic of another must ALWAYS be so to be axiomatically correct. This is the inverse relation of [characteristic_of](#characteristic_of).
+Bear in mind that the class which is realized_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [realizes](#realizes).
 
 ##### has_quality
 This should only be used when relating an occurrent to a quality (a particular form of continuant found most commonly in PATO). In our case, a behaviour may has_quality such a quality. (Formally, since has_quality is a sub-set of has_characteristic, the relationship should not work. However, some clever compromises underlying the relationship allow it to appear to work in just this special case.) This will be one of the most common connections our ontology makes to its imported classes.
 
 Bear in mind before adding the relation, that the class which has_quality another class must ALWAYS do so to be axiomatically correct. We will never see its inverse relation, as the aforesaid compromises are not simply reversible.
 
+NB: see [Imports](#imports).
+
 #### Disjoints
-Terms which need to clearly indicate their non-synonymy may occasionally need disjointing. This can be done in Desktop Protégé but not WebProtégé; it will not be visible in WebProtégé.
-
-We can assume classes exclude each other, particularly if they are obviously opposites, and need not necessarily disjoint them.
-
-But confusion can sometimes arise if we do not axiomatically state otherwise:
-a. This may be because synonymously used words may have opposing meanings elsewhere.
-b. Another reason may be because related words imply synonymy, when this is not our intent.
-
-Disjointing may have profound effects elsewhere in the ontology and should be avoided if possible. With synonymy, actual homonyms can be separated using the homonymous term's own ID as a prefix to identify it as having a different meaning. (NB: there should only ever be one term with any specific label, which will therefore be the primary word user and doesn't need an ID prefix - see [Synonyms](#synonyms).)
+We can assume certain classes exclude each other, particularly if they are obviously opposites, and need not necessarily disjoint them. We can also add comments if necessary. But disjointing may have profound effects elsewhere in the ontology and we currently avoid them for ACTAN terms. With synonymy, actual homonyms can be separated using our binomial system. (NB: there should only ever be one term with any specific label, which will therefore be the primary binomen user - see [Synonyms](#synonyms).)
 
 #### Imports
 You can reference an imported class in this ontology. Missing terms can be searched for in [OLS](https://www.ebi.ac.uk/ols4) and considered for import; the most productive sources so far have been ENVO, PATO and UBERON. If it doesn't already exist, it could even be given an interim placeholder status provided that a New Term Request is going to be made to a relevant external ontology with a view to replacing our placeholder with the new term import.
 
 The new term must belong to an ontology which offers an appropriate Creative Commons license or equivalent permission. If an as yet unimported term is wanted, check our ontology's [Licenses](licences) page to see if the ontology is already covered. The license type will need to be referenced there before an edit can import one of its terms; only an editor with management's permission can approve the license of a new ontology for import to this ontology.
 
-It is possible to edit imported terms, not least by deleting superfluous material. If adding any material to an import, always sub-annotate with a dc:contributor entry.
+It is possible to edit imported terms, by deleting superfluous material. But never inject new material into an import and don't modify the original rdfs:label.
 
-Don't modify the original rdfs:label. If instead of using hasExactSynonym you wish to relabel the term, use skos:prefLabel to add a label (and make sure your WebProtégé settings are set to view this in preference to rdfs:label when both exist).
-
-NB: For now, we will keep 'behavior' as top level label, respecting its GO origin as a high level imported term for a number of other related ontologies, despite a desire to favour 'behaviour' (which is its spelling in the quoted source) which will remain a synonym instead of skos:prefLabel.
-
-If re-importing (e.g. after an update in the original), a manager should merge it in desktop Protégé to avoid overwriting the term already imported to our ontology, as we will lose any of our own modifications. However, beware of imported terms which become obsolete in future updates and leave our edits free-floating.
+NB: In due course, we expect to expel almost all imported classes, and only provide external links to them in our Annotations.
 
 -----
