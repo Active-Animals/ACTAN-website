@@ -164,12 +164,7 @@ Choose the annotation property which is most suitable, when labelling synonyms. 
 
 If you wish to promote a synonym to the main label, justify this and try to engage in discussion before implementing any change; remember also to relegate the label to a synonym.
 
-The same word may have different meanings in different sources. The following method should enable a string search to pull out each alternate meaning:
-  1. Where it is used as a synonym with a different meaning to its use elsewhere, add the current term's ID to the synonym string as a suffix after a hyphen, and repeat for each different synonym meaning (e.g. if Label A applies to a primary term, synonym A-AAO000000x applies to one alternative meaning, synonym A-AAO000000y applies to another alternative meaning, etc).
-  2. Do not add the ID suffix to the label bearing the primary meaning of the string, unless it is demoted later to a synonym (and remove the suffix from any synonym promoted to primary label use).
-  3. It is possible that a synonym string is used in multiple ways (each with its own ID suffix) without being used as a primary label anywhere.
-  4. It is possible that a synonym string is used in multiple terms but only one way (without the need for an ID suffix), without being used as a primary label anywhere.
-  5. Where two synonymised occurrences of a label have the same meaning but different to a primary label usage, select one ID suffix to use for both. This could be one of the two occurrences, or in the case of a shared parent (most likely to happen with a Broad synonym) it could be the ID of the shared parent.
+The same word may have different meanings in different sources. The binomial system of term labelling should prevent overlap, but preferably also use hasRelatedSynonym if the same word is being used as a term label elsewhere.
 
 ### Obsoletions
 
