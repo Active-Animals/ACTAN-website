@@ -4,7 +4,7 @@ Welcome! We're all about classifying animal behaviour and cataloguing observatio
 
 ## INTRODUCTION
 
-The study of the mechanisms, development, evolution and function of behaviour is called [Ethology](https://doi.org/10.3389/fetho.2023.1270913). Behaviour classification is generally [a typological ordering system](https://doi.org/10.1046/j.1439-0469.2002.00211.x)[^1]. In this project, we are attempting to tease out some order from the, "almost chaotic diversity,"  of behaviour, by classifying its mechanisms (the more observable component of ethology, such as *swimming*) and their functional-context (the tip of the function iceberg wherein context may allow reasonable inferences, such as *escaping*).
+The study of the mechanisms, development, evolution and function of behaviour is called [Ethology](https://doi.org/10.3389/fetho.2023.1270913). Behaviour classification is generally [a typological ordering system](https://doi.org/10.1046/j.1439-0469.2002.00211.x)[^1]. In this project, we are attempting to tease out some order from the, "almost chaotic diversity,"  of behaviour. We do this first by classifying its **activities**. (This is the more observable component of ethology, such as *swimming*). Second, we classify its **functional-contexts**. (This is the tip of the function iceberg, where the context may allow reasonable inferences, such as *escape*). Third, we catalogue a range of **dispositions** which can be realized in particular behaviours, but are not themselves behaviours. (These are akin to tendencies or restrictions, such as the disposition among Hummingbirds to use a *pitching flap pattern* when hovering.)
 
 On our [SCOPING](scoping) page, you can find out more about our situation assessment, including the need for, and history of the project.
 
@@ -16,7 +16,7 @@ Having undergone a closed, primordial development phase, the ACTAN project is no
 
 This ontology is a tool designed and maintained by and for amateur animal behaviour watchers. It provides us with a system for classifying what could potentially be seen, heard, felt, or otherwise tangibly discerned by us. It can also help us to share knowledge with each other. For some of us, it could extend the scope of natural observation beyond taxonomy. For others, it may even replace taxonomy as our main observational paradigm, with taxonomy having the supplementary role. In other words, 'collecting' behaviours.
 
-A secondary use case is that of professional researchers into animal behaviour. Even if this ontology is not always consistent with the most current academic thinking, it can be used to build bridges between different interpretations or labels, as well as between 'citizens' and 'scientists'. If behaviour watchers use the labels to annotate publicly accessible artefacts as Instances of behaviour, it may assist professionals in searching for examples of unusual behaviour, or extensions of known behaviour to new animal taxa.
+A secondary use case is that of professional researchers into animal behaviour. This ontology may not always be consistent with the most current academic thinking. But it can be used to build bridges between different interpretations or labels, as well as between 'citizens' and 'scientists'. If behaviour watchers use the labels to annotate publicly accessible artefacts as Instances of behaviour, it may assist professionals in searching for examples of unusual behaviour, or extensions of known behaviour to new animal taxa.
 
 ### What's an ontology?
 
