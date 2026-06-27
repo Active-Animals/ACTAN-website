@@ -16,7 +16,7 @@ Having undergone a closed, primordial development phase, the ACTAN project is no
 
 This ontology is a tool designed and maintained by and for amateur animal behaviour watchers. It provides us with a system for classifying what could potentially be seen, heard, felt, or otherwise tangibly discerned by us. It can also help us to share knowledge with each other. For some of us, it could extend the scope of natural observation beyond taxonomy. For others, it may even replace taxonomy as our main observational paradigm, with taxonomy having the supplementary role. In other words, 'collecting' behaviours.
 
-A secondary use case is that of professional researchers into animal behaviour. This ontology may not always be consistent with the most current academic thinking. But it can be used to build bridges between different interpretations or labels, as well as between 'citizens' and 'scientists'. If behaviour watchers use the labels to annotate publicly accessible artefacts as Instances of behaviour, it may assist professionals in searching for examples of unusual behaviour, or extensions of known behaviour to new animal taxa.
+A secondary use case is that of professional researchers into animal behaviour. This ontology may not always be consistent with the most current academic thinking. But it can be used to build bridges between different interpretations or labels, as well as between 'citizens' and 'scientists'. Hobbyists can use the labels to annotate publicly accessible artefacts (photos, recordings, videos, etc) as Instances of behaviour. This may then assist professionals in searching for examples of unusual behaviour, or extensions of known behaviour to new animal taxa.
 
 ### What's an ontology?
 
@@ -34,9 +34,7 @@ A secondary use case is that of professional researchers into animal behaviour. 
 
 #### What is the ACTAN?
 
-This is an editable reference ontology for animal behaviours. It defines, labels, and interconnects potentially discernible actions and functional contexts. Using scientific references, it attempts to provide an internally consistent framework for classifying assertions which have been made about these behaviours.
-
-In addition, it offers a range of non-behavioural classes (e.g. qualities), mainly imported from other ontologies, which can help situate certain behaviours.
+This is an editable reference ontology for animal behaviours. It defines, labels, and interconnects potentially discernible actions, functional contexts, and dispositions. Using scientific references, it attempts to provide an internally consistent framework for classifying assertions which have been made about behaviours.
 
 #### What isn't the ACTAN?
 
@@ -48,11 +46,11 @@ Even more particularly, we are not describing specific individuals, except as In
 
 ### How does it work?
 
-You use the ontology's labels to annotate a behaviour observation (sometimes called artefacts, e.g. one of your photos, sound recordings, or video clips). To find the right label, you need to look in the behavior branch hierarchy. You might be able to work your own way through a particular sub-branch to what you are looking for. Or you might want to try searching for a word you think is in the ontology somewhere. Bear in mind that some behaviours are listed with more than one parent class, or as part of another, so you might come at what you are looking for from different routes.
+You use the ontology's labels to annotate your own behaviour observations (sometimes called artefacts, e.g. one of your photos, sound recordings, or video clips). To find the right label, you need to look in the behaviour branch hierarchy. You might be able to work your own way through a particular sub-branch to what you are looking for. Or you might want to try searching for a word you think is in the ontology somewhere. It could be a label or a synonym. Bear in mind that some behaviours are not only listed with a parent class, but also as part of another behaviour. Understand too, that some of what we call dispositions have sometimes been referred to as behaviours. So you might come at what you are looking for from different routes.
 
-It might also be, that you want to add one or more non-behaviour (descriptive) classes to your annotation, relating to issues such as habitat or morphology. A range of these are appended to our ontology. The taxonomic characteristics (e.g. species) will be managed by your observation's host platform, if you are using a depository like iNaturalist to save your observations.
+NB: You should not label observations using dispositions - these are only here to aid behaviour identification.
 
-Only in exceptional cases do we label composite behaviours (usually if they have a unique term, or if they are synergistic and not merely additive). In other words, if you wish to label a co-occurent set of behaviours, label each one of them. The same goes for non-behaviours.
+Only in rare cases do we label composite behaviours. (This is usually if they have a unique term, or if they are synergistic and not merely additive). In other words, if you wish to label a co-occurent set of behaviours, label each one of them.
 
 Remember that much is missing from the ontology and you may need to offer edits to existing entries, or new terms. If you want to improve the ontology, make sure you understand the section, [Can I contribute?](#can-i-contribute) Then tuck into the page about [EDITING](editing).
 
@@ -62,7 +60,7 @@ NB: You may offer edits to this Introduction or the Editing page too, although a
 
 The Active Animal's ontology structure and edit history is saved as a project in Stanford University's [WebProtégé](https://webprotege.stanford.edu) server. In this Alpha development phase, it is only visible to shared users who are accredited as collaborators. 
 
-WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). A download of the current WebProtégé ACTAN project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software, but offline edits do not presently have a merging process.
+WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). A download of the current WebProtégé ACTAN project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software. But merging offline edits is not encouraged, because of the risk of overwriting someone else's online changes.
 
 In the Beta phase, we hope to provide an easier tool for users to locate appropriate labels for applying to their own observation records. By the end of the Alpha phase, we will regularly upload versions to [Bioportal](https://bioportal.bioontology.org) and this will provide an interim search solution to users without access to the WebProtégé project.
 
@@ -70,11 +68,11 @@ Unless the [Neuro-Behavioural Ontology](https://www.ebi.ac.uk/ols4/ontologies/nb
 
 ### What about observations and examples?
 
-This project does not provide any storage for artefacts. Behavioural records are located in repositories in the form of example observations (ontologically referred to as Instances). iNaturalist provides the world's largest open data source of animal observations. Alongside this are a number of other open access online repositories for behavioural artefacts, such as xeno-canto. Most of these allow users to annotate or tag their uploads, and providing good labels for these annotations is our goal.
+This project does not provide any storage for artefacts. Behavioural records are located in repositories in the form of example observations (ontologically referred to as Instances). iNaturalist provides the world's largest open data source of animal observations. Alongside this are a number of other open access online repositories for behavioural artefacts, such as xeno-canto. Most of these allow users to annotate or tag their uploads. Providing good labels for these annotations is our goal.
 
 The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Our ontology here provides the systematic source labels for the project's basic Observation Fields there. The AA project is also in its Alpha stage and interested collaborators are encouraged to message the project's own administration there.
 
-Restricted access resources are unlikely to be referenced by the ontology, except in justifiable cases involving affordable entry or membership fees (e.g. behavioural artefacts like tools, nests, or fossils in museums, or videos which may be sourced in libraries, such as natural history documentaries on DVD). Some public animal behaviour resources also store accessible behavioural artefacts, such as [Elephant Voices](https://www.elephantvoices.org/studies-a-projects/the-elephant-ethogram.html).
+Restricted access resources are unlikely to be referenced by the ontology, except in justifiable cases. These may involve affordable entry or membership fees (e.g. behavioural artefacts like tools, nests, or fossils in museums, or videos which may be sourced in libraries, such as natural history documentaries on DVD). Some public animal behaviour resources also store accessible behavioural artefacts, such as [Elephant Voices](https://www.elephantvoices.org/studies-a-projects/the-elephant-ethogram.html).
 
 ### Can I contribute?
 
@@ -84,11 +82,11 @@ This ontology aims to be participatory, transparent and accountable. In practice
 
 Collaborators are expected to make active contributions, either in the ontology's engineering/software support, or in its database/editing curation, or stress-testing against their own observations. Consultants who only offer advice could play a key role, and will be directly recruited by a manager. Impromptu consultants will be thanked but invited to directly implement their own advice.
 
-If advice about an issue is solicited by an active collaborator, advisory comments (without further commitment) are welcome. This may even be preferred to diving straight into an edit, particularly for big changes. Big changes may be reverted by a manager if inadequate prior community discussion has occured.
+If advice about an issue is openly solicited by an active collaborator, advisory comments (without further commitment) are welcome. This may even be preferred to diving straight into an edit, particularly for big changes. Big changes may be reverted by a manager if inadequate prior community discussion has occured.
 
 During the Alpha development phase, there will be a single manager (Ditch Townsend). Collaborators may be invited by a manager, or recommended to a manager by an editor. Known collaborators may be invited by a manager to be editors. Unknown collaborators may be invited to be commenters until they become sufficiently known to be invited to be an editor. The collaboration team will be limited in size.
 
-During the Beta development phase, a significant number of positions will be available for new editors. Also for more commenters, provided they test the ontology against their own observations. During this phase, a mutually acceptable participatory organisational structure will be set up and tested, but will remain advisory to the manager, who will arrange for a deputy to also have management privileges.
+During the Beta development phase, a significant number of positions will be available for new editors. Also for more commenters, provided they test the ontology against their own observations. During this phase, a mutually acceptable participatory organisational structure will be set up and tested. But it will remain advisory to the manager, who will arrange for a deputy to also have management privileges.
 
 Only in the open, final phase will the ontology be fully open. This stage will also mark an accountable and participatory organisation and management structure, including a mechanism for changing leadership.
 
