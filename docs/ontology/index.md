@@ -21,16 +21,12 @@ A secondary use case is that of professional researchers into animal behaviour. 
 ### What's an ontology?
 
 > An ontology contains a formal classification of terminology in a domain that provides textual and machine readable definitions, and defines the relationships between terms. An ontology is a terminology, but a terminology is not (necessarily) an ontology.
-
-<p style="text-align: right">
-  <a href="https://oboacademy.github.io/obook/lesson/ontology-term-use">Nicole Vasilevsky</a>
-</p>
+>
+> <a href="https://oboacademy.github.io/obook/lesson/ontology-term-use">Nicole Vasilevsky</a>
 
 > A reference ontology is meant to serve a general purpose, providing terms for some domain of science. We can compare it to a textbook. An application ontology is meant to serve a specific purpose, limited to a particular project or institution, but often crossing several domains. An application ontology is likely to include terms from several reference ontologies. Reference ontologies focus almost exclusively on universals, while application ontologies are more likely to include terms for particulars.
-
-<p style="text-align: right">
-  <a href="https://github.com/jamesaoverton/obo-tutorial/blob/master/docs/obo.md">James A Overton</a>
-</p>
+>
+> <a href="https://github.com/jamesaoverton/obo-tutorial/blob/master/docs/obo.md">James A Overton</a>
 
 #### What is the ACTAN?
 
@@ -95,7 +91,7 @@ Feel free to look over our [EDITING](editing) guidelines.
 ### A tribute
 
 In 1963, a key figure in the world of Ethology, Niko Tinbergen, wrote:
-> The variety of behaviours found in the animal kingdom is so vast, and their description is so much more laborious than the description of structure, that selectiveness of description will become increasingly urgent... Yet even with the most economic procedures the amount of description to be done will long remain very large, so large in fact that we shall soon have to resort to a policy of filing descriptive material in libraries or archives (including film libraries) rather than publishing it in the usual journals.
+> The variety of behaviours found in the animal kingdom is so vast... even with the most economic procedures the amount of description to be done will long remain very large, so large in fact that we shall soon have to resort to a policy of filing descriptive material in libraries or archives (including film libraries) rather than publishing it in the usual journals.
 > 
 > ***Tinbergen, N. (1963). On aims and methods of ethology. Zeitschrift für tierpsychologie, 20(4), 410-433.***
 
