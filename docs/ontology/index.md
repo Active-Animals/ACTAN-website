@@ -92,6 +92,17 @@ Only in the open, final phase will the ontology be fully open. This stage will a
 
 Feel free to look over our [EDITING](editing) guidelines.
 
+### A tribute
+
+In 1963, a key figure in the world of Ethology, Niko Tinbergen, wrote:
+> The variety of behaviours found in the animal kingdom is so vast, and their description is so much more laborious than the description of structure, that selectiveness of description will become increasingly urgent... Yet even with the most economic procedures the amount of description to be done will long remain very large, so large in fact that we shall soon have to resort to a policy of filing descriptive material in libraries or archives (including film libraries) rather than publishing it in the usual journals.
+> 
+> ***Tinbergen, N. (1963). On aims and methods of ethology. Zeitschrift für tierpsychologie, 20(4), 410-433.***
+
+We hope that ACTAN can help facilitate such an endeavour, which is becoming increasingly feasible now, with our access to digital media, cloud-based data storage, and globally networked citizen/scientist information resources.
+
+---------
+
 *Bear in mind that this ontology has NO COPYRIGHT, so neither will any of your contributions to it [(see Licensing page)](licences).*
 
 ***If you would like to collaborate, feel free to contact [Ditch Townsend](https://orcid.org/0000-0002-4277-2151)***
