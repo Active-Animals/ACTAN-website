@@ -12,19 +12,17 @@ We operate with a **[ CC0 1.0 ](https://creativecommons.org/publicdomain/zero/1.
 
 If you're interested in the business of classifying animal behaviour, this is the place for you.
 
-On the following pages, you can find an [INTRODUCTION](ontology/index) to the ontology (a kind of uber-glossary).
+On the following pages, you can find an [INTRODUCTION](ontology/index) to the ontology (a kind of uber-glossary). Its [SCOPING](ontology/scoping) page reflects on the need for an ontology and its potted history. 
 
-Its [SCOPING](ontology/scoping) page reflects on the need for an ontology and its potted history.
+The ontology itself hosts a plethora of labels, synonyms, definitions, and other provenance or explanatory information. The [Alpha-3 version](https://webprotege.stanford.edu/#projects/a0eaa10e-bc54-4a59-94e3-529063fe71c6/edit/Classes) is hosted at WebProtege and is open for viewing after registering your username.
 
-A version of the ontology can be searched, and its internal hierarchy and connections viewed, at [Bioportal](https://bioportal.bioontology.org/ontologies/ACTAN?p=summary).
-
-If you're keen on collaborating to develop the **technology** processes for it, to curate its **content**, or to support its **public** facies such as this website or at Bioportal, take a look at the [EDITING](ontology/editing) page.
+If you're keen on collaborating to develop the **technology** processes for it, to curate its **content**, you wish to **stress-test** the ontology's labels against your observations, or to support its **public** facies such as this website or at Bioportal, take a look at the INTRODUCTION section: [Can I contribute?](https://active-animals.github.io/ACTAN-website/ontology/index#can-i-contribute)
 
 ## Behaviour Labels
 
-The ontology hosts a plethora of labels, synonyms, definitions, and other provenance or explanatory information. Most users will not come here to look at the detailed ontology though. They will want to search a more simple catalogue for labels to apply to behaviours they have observed and recorded, perhaps as photos, videos, or recordings.
+Most users will not come here to look at the detailed ontology though. They will want to skim through a more simple catalogue for labels to apply to behaviours they have observed and recorded, perhaps as photos, videos, or recordings. The latest version of it can be searched, and its internal hierarchy and connections viewed, at [Bioportal](https://bioportal.bioontology.org/ontologies/ACTAN?p=summary).
 
-This function is not yet finalised for general users. if however, you wish to stress-test the ontology's labels against your observations, feel free to contact the manager to see if you can have access to the ontology directly. Check out the INTRODUCTION section: [Can I contribute?](/ontologyindex#can-i-contribute)
+There is also a full [CHECKLIST]() of ACTAN behaviours for quick reference.
 
 ## Observation Repositories
 
