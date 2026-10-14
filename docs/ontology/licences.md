@@ -26,7 +26,6 @@ Please understand and follow the licensing requirements of any imported ontology
 
 *Licence holders please note that all imported terms are likely to have had some annotations removed or added to the local copy to aid integration with our ontology.*
 
-#### AFO - Allotrope Foundation Ontology Merged Without QUDT And Inferred [ CC BY 4.0 ](https://creativecommons.org/licenses/by/4.0/)
 #### BCIO - The Behaviour Change Intervention Ontology [ CC BY 4.0 ](https://creativecommons.org/licenses/by/4.0/)
 #### BFO - Basic Formal Ontology [ CC BY 4.0 ](https://creativecommons.org/licenses/by/4.0/)
 #### BIOLINK - Biolink-Model [ CC0 1.0 ](https://creativecommons.org/publicdomain/zero/1.0/)
