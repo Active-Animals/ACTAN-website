@@ -24,7 +24,7 @@ If you're keen on collaborating to develop the **technology** processes for it, 
 
 Most users will not come here to look at the detailed ontology though. They will want to skim through a more simple catalogue for labels to apply to behaviours they have observed and recorded, perhaps as photos, videos, or recordings.
 
-There is also a full [CHECKLIST]() of ACTAN behaviours for quick reference.
+There is also a full [CHECKLIST](https://active-animals.github.io/ACTAN-website/ontology/checklist) of ACTAN behaviours for quick reference.
 
 ## Observation Repositories
 
