@@ -20,9 +20,9 @@ Labels are genonymic binomials: each child class has its own first name and its 
 
 The frequent use of gerunds alongside nouns, some of which can themselves be used as noun-adjuncts, can make it look like a binomial label functions like an adjective and a noun. This is an easy mistake to make, and can help explain some otherwise awkward-looking binomens. Both parts of the label should actually be read as nouns (except for some rare cases). An easy mental work around is to add the modifier '-type' after the first word (e.g. 'hunt-type forage' if 'hunt forage' feels odd).
 
-### Activity Behaviours
+### Behaviours
 
-The list below is partially collapsed list below (click 'Details' to see more of any collapsed section). Much is no doubt missing from it. If you want to collaborate to improve it, you'd be welcome. Check out the section in the INTRODUCTION called: [Can I contribute?](https://active-animals.github.io/ACTAN-website/ontology/index#can-i-contribute)
+Much is no doubt missing from the list below. If you want to collaborate to improve it, you'd be welcome. Check out the section in the INTRODUCTION called: [Can I contribute?](https://active-animals.github.io/ACTAN-website/ontology/index#can-i-contribute)
 
    - behaviour (ACTAN:0000002)
      - activity behaviour (ACTAN:0000078)
