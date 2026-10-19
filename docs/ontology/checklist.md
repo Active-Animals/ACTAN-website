@@ -921,10 +921,9 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - protection caring (ACTAN:0000834)
            - clustering caring (ACTAN:0000997)
              - mass-spawn clustering (ACTAN:0000478)
-       - development context (ACTAN:0000773) <details>
+       - development context (ACTAN:0000773)
          - recruitment development (ACTAN:0000415)
          - wing-exercise development (ACTAN:0000775)
          - hatching development (ACTAN:0000903)
-</details>
 
 END
