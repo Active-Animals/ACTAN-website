@@ -43,3 +43,7 @@ Please understand and follow the licensing requirements of any imported ontology
 #### RO - OBO Relations Ontology [ CC0 1.0 ](https://creativecommons.org/publicdomain/zero/1.0/)
 #### UBERON - Uber-anatomy ontology [ CC BY 3.0 ](https://creativecommons.org/licenses/by/3.0/)
 #### ZFA - Zebrafish Anatomy Ontology [ CC BY 3.0 ](https://creativecommons.org/licenses/by/3.0/)
+
+-----
+
+### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
