@@ -43,8 +43,8 @@ Drawing some inspiration from Bill Eshmeyer (see [Eschmeyer's Catalog of Fishes]
 
 -----
 
-[^1]: If you can't access this article, try searching for its title in Google Scholar to see if there are alternative sources.
+### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
 
 -----
 
-### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
+[^1]: If you can't access this article, try searching for its title in Google Scholar to see if there are alternative sources.
