@@ -353,3 +353,7 @@ It is possible to edit imported terms, by deleting superfluous material. But nev
 NB: In due course, we expect to expel almost all imported classes, and only provide external links to them in our Annotations.
 
 -----
+
+### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
+
+-----
