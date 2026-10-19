@@ -1,16 +1,10 @@
-# Active Animals
+# Active Animals initiative
 
 <img src="https://avatars.githubusercontent.com/u/245022462?s=400&u=bb83203fd71101d47bee55894c82886d513019c3&v=4" width="100">
 
-Welcome to the Active Animals website.
+Welcome to Active Animals. If you're interested in classifying animal behaviour, then make yourself at home.
 
-We are currently in the Alpha phase, so some aspects of the Active Animals initiative are under construction and have limited functionality or access.
-
-We operate with a **[ CC0 1.0 ](https://creativecommons.org/publicdomain/zero/1.0/)  No Copyright** licence.
-
-## Behaviour Ontology
-
-If you're interested in the business of classifying animal behaviour, this is the place for you.
+## Behaviour Ontology (ACTAN)
 
 On the following pages, you can find an [INTRODUCTION](ontology/index) to the ontology (a kind of uber-glossary). Its [SCOPING](ontology/scoping) page reflects on the need for an ontology and its potted history. 
 
@@ -28,9 +22,15 @@ There is also a full [CHECKLIST](https://active-animals.github.io/ACTAN-website/
 
 ## Observation Repositories
 
-#### Active Animals at iNaturalist
+#### iNaturalist
 
 The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Still in its Alpha phase, it can be viewed by anyone, but new membership is limited to stress-testers.
+
+-----
+
+We are currently in the Alpha phase, so some aspects of the initiative are under construction and have limited functionality or access.
+
+We operate with a **[ CC0 1.0 ](https://creativecommons.org/publicdomain/zero/1.0/)  No Copyright** licence.
 
 -----
 
