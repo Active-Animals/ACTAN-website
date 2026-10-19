@@ -26,10 +26,9 @@ The list below is partially collapsed list below (click 'Details' to see more of
 
    - behaviour (ACTAN:0000002)
      - activity behaviour (ACTAN:0000078)
-       - exudation activity (ACTAN:0000097) <details>
+       - exudation activity (ACTAN:0000097)
          - musk exudation (ACTAN:0000417)
-         </details>
-       - kinetics activity (ACTAN:0000147) <details>
+       - kinetics activity (ACTAN:0000147)
          - launch kinetics (ACTAN:0000003)
          - coast kinetics (ACTAN:0000042)
          - sound kinetics (ACTAN:0000094)
@@ -107,7 +106,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - stab hit (ACTAN:0000899)
        - positioning activity (ACTAN:0000175)
          - locomotion positioning (ACTAN:0000176)
-           - interfacing locomotion (ACTAN:0000012) <details>
+           - interfacing locomotion (ACTAN:0000012)
              - interfacing-regime (ACTAN:0000086)
                - free-fall regime (ACTAN:0000193)
                - glide regime (ACTAN:0000194)
@@ -122,7 +121,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - interfacing-gait (ACTAN:0000155)
                - skittering gait (ACTAN:0000442)
                - steaming gait (ACTAN:0000819)
-           - flying locomotion (ACTAN:0000190) <details>
+           - flying locomotion (ACTAN:0000190)
              - flying-gait (ACTAN:0000075)
                - pitching gait (ACTAN:0000634)
                - heaving gait (ACTAN:0000635)
@@ -131,7 +130,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
                - undulating-flying regime (ACTAN:0000531)
                - bounding regime (ACTAN:0000533)
                - level-flying regime (ACTAN:0000774)
-           - swimming locomotion (ACTAN:0000196) <details>
+           - swimming locomotion (ACTAN:0000196)
              - swimming-gait (ACTAN:0000087)
                - ribbon-undulation gait (ACTAN:0000016)
                  - amiiform gait (ACTAN:0000031)
@@ -168,12 +167,12 @@ The list below is partially collapsed list below (click 'Details' to see more of
                - float regime (ACTAN:0000573)
                - drift regime (ACTAN:0000574)
                - surfacing regime (ACTAN:0000575)
-           - burrowing locomotion (ACTAN:0000283) <details>
+           - burrowing locomotion (ACTAN:0000283)
              - burrowing-gait (ACTAN:0000025)
                - anchor-probe gait (ACTAN:0000284)
                - swim-burrowing gait (ACTAN:0000345)
                - peristaltic-burrowing gait (ACTAN:0000797)
-           - traversing locomotion (ACTAN:0000754) <details>
+           - traversing locomotion (ACTAN:0000754)
              - traversing-regime (ACTAN:0000089)
                - boost regime (ACTAN:0000171)
                - body-throw regime (ACTAN:0000232)
@@ -240,7 +239,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
                  - clamber gait (ACTAN:0000728)
                  - pull-up gait (ACTAN:0000748)
                - inverted-quadrupedal gait (ACTAN:0000260)
-         - posture positioning (ACTAN:0000177) <details>
+         - posture positioning (ACTAN:0000177)
            - coil posture (ACTAN:0000007)
              - ball coil (ACTAN:0000061)
              - elevated-S coil (ACTAN:0000247)
@@ -258,7 +257,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - cantilever posture (ACTAN:0000259)
            - hang posture (ACTAN:0000261)
            - span posture (ACTAN:0000262)
-       - technic activity (ACTAN:0000271) <details>
+       - technic activity (ACTAN:0000271)
          - construction technic (ACTAN:0000272)
            - cementing construction (ACTAN:0000273)
            - web-building construction (ACTAN:0000275)
@@ -293,13 +292,13 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - wing-thrash bathe (ACTAN:0000791)
              - somersault bathe (ACTAN:0000792)
              - head-scoop bathe (ACTAN:0000793)
-       - colouration activity (ACTAN:0000513) <details>
+       - colouration activity (ACTAN:0000513)
          - iridescence colouration (ACTAN:0000864)
          - fading colouration (ACTAN:0000865)
          - chromatics colouration (ACTAN:0000866)
          - contrast colouration (ACTAN:0000867)
        - kinematics activity (ACTAN:0000747)
-         - placement kinematics (ACTAN:0000081) <details>
+         - placement kinematics (ACTAN:0000081)
            - brace placement (ACTAN:0000060)
            - stance placement (ACTAN:0000085)
            - suspension placement (ACTAN:0000091)
@@ -389,7 +388,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - adduction eye-placement (ACTAN:0000975)
              - supraduction eye-placement (ACTAN:0000980)
              - infraduction eye-placement (ACTAN:0000981)
-         - movement kinematics (ACTAN:0000082) <details>
+         - movement kinematics (ACTAN:0000082)
            - tucking movement (ACTAN:0000018)
              - limb tucking (ACTAN:0000943)
              - head tucking (ACTAN:0000944)
@@ -513,7 +512,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - infraducting eye-movement (ACTAN:0000978)
            - circumducting movement (ACTAN:0001026)
              - gonopodium circumduction (ACTAN:0001027)
-         - manoeuvre kinematics (ACTAN:0000149) <details>
+         - manoeuvre kinematics (ACTAN:0000149)
            - rotating manoeuvre (ACTAN:0000013)
              - yawing rotating (ACTAN:0000168)
              - rolling rotating (ACTAN:0000685)
@@ -538,9 +537,9 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - deceleration manoeuvre (ACTAN:0000673)
      - context behaviour (ACTAN:0000751)
        - travel context (ACTAN:0000178)
-         - plankton travel (ACTAN:0000043) <details>
+         - plankton travel (ACTAN:0000043)
            - aerial plankton (ACTAN:0000191)
-         - relativity travel (ACTAN:0000288) <details>
+         - relativity travel (ACTAN:0000288)
            - following relativity (ACTAN:0000325)
            - approach relativity (ACTAN:0000326)
            - lunge relativity (ACTAN:0000327)
@@ -563,7 +562,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - displacing relativity (ACTAN:0000930)
            - periphery relativity (ACTAN:0000989)
            - interception relativity (ACTAN:0000993)
-         - localization travel (ACTAN:0000290) <details>
+         - localization travel (ACTAN:0000290)
            - transition localization (ACTAN:0000144)
              - exit transition (ACTAN:0000028)
                - egress exit (ACTAN:0000296)
@@ -610,7 +609,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - trailing translocation (ACTAN:0000330)
              - returning translocation (ACTAN:0000544)
              - creeping translocation (ACTAN:0000547)
-         - taxis travel (ACTAN:0000368) <details>
+         - taxis travel (ACTAN:0000368)
            - thermo-taxis (ACTAN:0000519)
            - chemo-taxis (ACTAN:0000520)
            - geo-taxis (ACTAN:0000559)
@@ -618,10 +617,10 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - photo-taxis (ACTAN:0000587)
            - rheo-taxis (ACTAN:0000593)
            - thigmo-taxis (ACTAN:0000599)
-       - engineering context (ACTAN:0000180) <details>
+       - engineering context (ACTAN:0000180)
          - facilitation engineering (ACTAN:0000185)
          - hydraulics engineering (ACTAN:0001035)
-       - cognition context (ACTAN:0000270) <details>
+       - cognition context (ACTAN:0000270)
          - assessment cognition (ACTAN:0000334)
            - vulnerability assessment (ACTAN:0000337)
            - danger assessment (ACTAN:0000382)
@@ -634,7 +633,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - predator inspection (ACTAN:0000400)
            - head-high inspection (ACTAN:0000807)
            - resource inspection (ACTAN:0001023)
-       - perception context (ACTAN:0000335) <details>
+       - perception context (ACTAN:0000335)
          - listen perception (ACTAN:0000022)
          - look perception (ACTAN:0000318)
            - tracking look (ACTAN:0000585)
@@ -653,7 +652,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - waiting timing (ACTAN:0000617)
            - transience timing (ACTAN:0001032)
        - maintenance context (ACTAN:0000341)
-         - feed maintenance (ACTAN:0000348) <details>
+         - feed maintenance (ACTAN:0000348)
            - storage feed (ACTAN:0000349)
            - handle feed (ACTAN:0000350)
            - farm feed (ACTAN:0000352)
@@ -683,7 +682,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - scavenge forage (ACTAN:0001007)
            - ingestion feed (ACTAN:0000682)
              - swallow ingestion (ACTAN:0000035)
-         - alarm maintenance (ACTAN:0000367) <details>
+         - alarm maintenance (ACTAN:0000367)
            - autotomy alarm (ACTAN:0000369)
              - true autotomy (ACTAN:0000370)
            - defence alarm (ACTAN:0000371)
@@ -704,7 +703,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - monopolization alarm (ACTAN:0000378)
            - freeze alarm (ACTAN:0000504)
            - pain alarm (ACTAN:0000581)
-         - homeostasis maintenance (ACTAN:0000381) <details>
+         - homeostasis maintenance (ACTAN:0000381)
            - rest homeostasis (ACTAN:0000310)
              - sleep rest (ACTAN:0000309)
            - thermoregulation homeostasis (ACTAN:0000342)
@@ -729,7 +728,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
            - buoyancy homeostasis (ACTAN:0000677)
              - piping buoyancy (ACTAN:0000591)
                - bubble piping (ACTAN:0000910)
-         - comfort maintenance (ACTAN:0000708) <details>
+         - comfort maintenance (ACTAN:0000708)
            - yawn comfort (ACTAN:0000584)
            - groom comfort (ACTAN:0000609)
              - auto groom (ACTAN:0000610)
@@ -752,7 +751,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - invitation groom (ACTAN:0000611)
            - stretch comfort (ACTAN:0000709)
        - interaction context (ACTAN:0000383)
-         - agonism interaction (ACTAN:0000384) <details>
+         - agonism interaction (ACTAN:0000384)
            - antagonism agonism (ACTAN:0000385)
              - confrontation antagonism (ACTAN:0000329)
                - lateral confrontation (ACTAN:0000555)
@@ -777,7 +776,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - submission ranking (ACTAN:0000506)
              - peace-making ranking (ACTAN:0000881)
              - acquaintance ranking (ACTAN:0000894)
-         - participation interaction (ACTAN:0000409) <details>
+         - participation interaction (ACTAN:0000409)
            - colony participation (ACTAN:0000044)
              - eusociality colony (ACTAN:0000393)
            - indirect-sample participation (ACTAN:0000410)
@@ -810,7 +809,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
                - male-male formation (ACTAN:0000900)
              - affiliation pairing (ACTAN:0000832)
                - skirmish affiliation (ACTAN:0000891)
-         - signal interaction (ACTAN:0000414) <details>
+         - signal interaction (ACTAN:0000414)
            - modality signal (ACTAN:0000117)
              - semiochemical modality (ACTAN:0000416)
                - scent semiochemical (ACTAN:0000420)
@@ -835,7 +834,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - whole performance (ACTAN:0000114)
              - icon performance (ACTAN:0000119)
              - feature performance (ACTAN:0000125)
-         - influence interaction (ACTAN:0000438) <details>
+         - influence interaction (ACTAN:0000438)
            - reliability influence (ACTAN:0000095)
            - buffering influence (ACTAN:0000112)
              - social buffering (ACTAN:0000447)
@@ -872,7 +871,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - intimidation manipulation (ACTAN:0001018)
            - acceptance influence (ACTAN:0000465)
            - reconciliation influence (ACTAN:0000608)
-         - cooperation interaction (ACTAN:0000463) <details>
+         - cooperation interaction (ACTAN:0000463)
            - role cooperation (ACTAN:0000404)
            - allogroom cooperation (ACTAN:0000582)
            - relief cooperation (ACTAN:0000837)
@@ -882,7 +881,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - swamping assistance (ACTAN:0000996)
          - facilitation interaction (ACTAN:0001005)
        - breeding context (ACTAN:0000443)
-         - mating breeding (ACTAN:0000471) <details>
+         - mating breeding (ACTAN:0000471)
            - mate-choice mating (ACTAN:0000450)
              - search mate-choice (ACTAN:0000470)
            - courtship mating (ACTAN:0000472)
@@ -907,7 +906,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
              - harassment coercion (ACTAN:0000473)
              - force coercion (ACTAN:0001021)
              - intimidation coercion (ACTAN:0001022)
-         - caring breeding (ACTAN:0000479) <details>
+         - caring breeding (ACTAN:0000479)
            - incubation caring (ACTAN:0000474)
              - aeration incubation (ACTAN:0000854)
              - mouth incubation (ACTAN:0000869)
@@ -926,5 +925,6 @@ The list below is partially collapsed list below (click 'Details' to see more of
          - recruitment development (ACTAN:0000415)
          - wing-exercise development (ACTAN:0000775)
          - hatching development (ACTAN:0000903)
+</details>
 
 END
