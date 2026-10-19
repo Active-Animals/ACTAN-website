@@ -28,7 +28,7 @@ The list below is partially collapsed list below (click 'Details' to see more of
      - activity behaviour (ACTAN:0000078)
        - exudation activity (ACTAN:0000097) <details>
          - musk exudation (ACTAN:0000417)
-         - </details>
+         </details>
        - kinetics activity (ACTAN:0000147) <details>
          - launch kinetics (ACTAN:0000003)
          - coast kinetics (ACTAN:0000042)
