@@ -30,7 +30,7 @@ There is also a full [CHECKLIST](https://active-animals.github.io/ACTAN-website/
 
 #### Active Animals at iNaturalist
 
-The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Still in its Alpha phase, it can be viewed by anyone, but new membership is limited to stress-testers (see [Labels](#labels)).
+The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Still in its Alpha phase, it can be viewed by anyone, but new membership is limited to stress-testers.
 
 -----
 
