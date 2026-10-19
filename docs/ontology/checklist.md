@@ -926,4 +926,6 @@ The list below is partially collapsed list below (click 'Details' to see more of
          - wing-exercise development (ACTAN:0000775)
          - hatching development (ACTAN:0000903)
 
-END
+-----
+
+### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
