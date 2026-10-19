@@ -97,6 +97,9 @@ In 1963, a key figure in the world of Ethology, Niko Tinbergen, wrote:
 
 We hope that ACTAN can help facilitate such an endeavour, which is becoming increasingly feasible now, with our access to digital media, cloud-based data storage, and globally networked citizen/scientist information resources.
 
+-----
+
+### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
 ---------
 
 *Bear in mind that this ontology has NO COPYRIGHT, so neither will any of your contributions to it [(see Licensing page)](licences).*
@@ -107,6 +110,3 @@ We hope that ACTAN can help facilitate such an endeavour, which is becoming incr
 
 [^1]: If you can't access this article, try searching for its title in Google Scholar to see if there are alternative sources.
 
------
-
-### [Return to WELCOME page](https://active-animals.github.io/ACTAN-website/)
