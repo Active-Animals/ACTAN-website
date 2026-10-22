@@ -8,7 +8,7 @@ Welcome to Active Animals. If you're interested in classifying animal behaviour,
 
 On the following pages, you can find an [INTRODUCTION](ontology/index) to the ontology (a kind of uber-glossary). Its [SCOPING](ontology/scoping) page reflects on the need for an ontology and its potted history. 
 
-The ontology itself hosts a plethora of labels, synonyms, definitions, and other provenance or explanatory information. The [Alpha-3 version](https://webprotege.stanford.edu/#projects/a0eaa10e-bc54-4a59-94e3-529063fe71c6/edit/Classes) is hosted at WebProtégé and is open for viewing after registering your username. (We have provided some [notes here](https://active-animals.github.io/ACTAN-website/ontology/editing#Using-WebProtégé) on using WebProtégé.)
+The ontology itself hosts a plethora of labels, synonyms, definitions, and other provenance or explanatory information. The [Alpha-3 version](https://webprotege.stanford.edu/#projects/a0eaa10e-bc54-4a59-94e3-529063fe71c6) is hosted at WebProtégé and is open for viewing after registering your username. (We have provided some [notes here](https://active-animals.github.io/ACTAN-website/ontology/editing#Using-WebProtégé) on using WebProtégé.)
 
 The latest version of it can also be searched, and its internal hierarchy and connections viewed, at [Bioportal](https://purl.bioontology.org/ontology/ACTAN?conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FACTAN_0000002).
 
