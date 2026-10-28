@@ -10,7 +10,7 @@ On the following pages, you can find an [INTRODUCTION](ontology/index) to the on
 
 The ontology itself hosts a plethora of labels, synonyms, definitions, and other provenance or explanatory information. The [Alpha-3 version](https://webprotege.stanford.edu/#projects/a0eaa10e-bc54-4a59-94e3-529063fe71c6) is hosted at WebProtégé and is open for viewing after registering your username. (We have provided some [notes here](https://active-animals.github.io/ACTAN-website/ontology/editing#Using-WebProtégé) on using WebProtégé.)
 
-The latest version of it will soon also be searchable, and its internal hierarchy and connections viewed, at Bioportal.
+The latest version of it is searchable, and its internal hierarchy and connections viewed, at [Bioportal](https://purl.bioontology.org/ontology/ACTAN?conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FACTAN_0000002).
 
 If you're keen on collaborating to develop the **technology** processes for it, to curate its **content**, you wish to **stress-test** the ontology's labels against your observations, or to support its **public** facies such as this website or at Bioportal, take a look at the INTRODUCTION section: [Can I contribute?](https://active-animals.github.io/ACTAN-website/ontology/index#can-i-contribute)
 
