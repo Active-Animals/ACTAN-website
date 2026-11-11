@@ -24,6 +24,10 @@ Most users will not come here to look at the detailed ontology though. They will
 
 The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Still in its Alpha phase, it can be viewed by anyone, but new membership is limited to stress-testers.
 
+## Discussion forum
+
+We have a forum to talk to each other about what is happening within ACTAN. You are free to start or join conversations there, but will need to [register](https://github.com/signup) with GitHub and then follow [Active-Animals](https://github.com/Active-Animals) there.
+
 -----
 
 We are currently in the Alpha phase, so some aspects of the initiative are under construction and have limited functionality or access.
