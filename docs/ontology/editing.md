@@ -63,7 +63,9 @@ Meanwhile, bear in mind that you can view or hide resolved WebProtégé comments
 
 ### Annotations
 
-Annotations allow us to understand more about a given class. It may give information about by whom and when it was created, its synonyms, or comments about it, etc. Annotations may have a single sub-annotation level containing similar information. Annotations are added to the ontology via Annotation Property dialogues.
+Annotations allow us to understand more about a given class. It may give information about by whom and when it was created, its synonyms, or comments about it, etc. Annotations are most easily added to the ontology via the Annotations section of the Class view. (Start typing in the 'Enter property' box and pick the correct property from the drop-down list. Most labels are unique but some appear to be duplicates; for these, hover over your choice once made to see the actual IRI appear and if wrong, re-enter your word stem and choose another option before re-hovering). Then make your entry in the next box.
+
+NB: Annotations should not be nested inside each other, as nesting is not easily viewed or performed using WebProtégé.
 
 #### DO Use
 ##### For Behaviours OR Dispositions
