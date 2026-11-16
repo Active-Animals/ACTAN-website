@@ -73,9 +73,13 @@ Automatically introduced annotations for new terms are:
   - created_by
   - creation_date
 
-Required annotations for all new terms are:
-  - rdfs:label
-  - rdfs:comment (there may be others with ad hoc notes, but one MUST contain text notes for explanatory information about three key annotation types which would otherwise be obvious if we used nested annotations):
+Required annotations for all terms are:
+  - **rdfs:label**
+  - **hasDefinition**
+  - **dcterms:contributor** (i.e your ORCID or other details, if not automatically added above.)  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
+  - **dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+  - **conformsTo** (you must pick the correct dosdp-Pattern)
+  - **rdfs:comment** (there may be others with ad hoc notes, but one MUST contain text notes for explanatory information about three key annotation types which would otherwise be obvious if we used nested annotations):
     - LABEL
       - `<label>`
       - AND
@@ -96,25 +100,19 @@ Required annotations for all new terms are:
       - `<year of publication>`
       - source e.g. DOI
         -  AND `<partial exclusive quote>` if not exact
-  - dcterms:source (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT dc:source which isn't parsed by WebProtege.
-  - conformsTo (you must pick the correct dosdp-Pattern)
-      - dc:date (only the year)
-      - dc:source OR
-  - dcterms:contributor (i.e your ORCID or other details, if not automatically added.)  NB: NOT dc:contributor which isn't parsed by WebProtege.
-  - hasDefinition
 
 As required annotations are:
-  - hasBroadSynonym
-  - hasExactSynonym
-  - hasNarrowSynonym
-  - hasRelatedSynonym
-  - rdfs:seeAlso (where another source gives an illuminating perspective but is not necessarily synonymous)
-    - skos:example (for valuable illustrations)
-    - skos:scopeNote (for an idea about the content or limits of a concept, usually where the definition is not yet finally composed)
-    - broadMatch (to link an external ontology term which is not equivalent, but fully includes your term)
-    - closeMatch (to link an external ontology term which is almost equivalent to your term. You should not use direct equivalence or DbXref, since we should instead import and use the external term. NB: given that NBO is effectively defunct, no imports or direct equivalence terms should be used with it)
-    - narrowMatch (to link an external ontology term which is not equivalent, but is fully included by your term)
-    - relatedMatch (to link an external ontology term which significantly but incompletely overlaps with your term)
+  - **example of usage** (for valuable illustrations)
+  - **notes** (for an idea about the content or limits of a concept)
+  - **rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
+  - **hasBroadSynonym** (a synonym which is bigger than, but fully includes, your label)
+  - **hasExactSynonym**
+  - **hasNarrowSynonym** (a synonym which is smaller than, and fully included by, your label)
+  - **hasRelatedSynonym** (a synonym which is explanatory, or to save confusion when it is being used as a label or synonym in another place in the ontology)
+  - **broadMatch** (to link an external ontology term which is not equivalent, but fully includes your term)
+  - **closeMatch** (to link an external ontology term which is almost equivalent to your term - most likely in NBO - the neuro-behaviour ontology. You should not use direct equivalence or *DbXref*, since we should instead import and use the external term. NB: given that NBO is effectively defunct, no imports or direct equivalence should be used with it)
+  - **narrowMatch** (to link an external ontology term which is not equivalent, but is fully included by your term)
+  - **relatedMatch** (to link an external ontology term which significantly but incompletely overlaps with your term)
 
 #### DON'T Use
   - A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms.
