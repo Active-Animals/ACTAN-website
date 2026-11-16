@@ -41,12 +41,14 @@ If you really want to delve into ontology engineering (including desktop Protég
 ### Always...
 
 #### Small bites
-The history tab in WebProtégé will be easiest for future users to follow if every edit is small, containing only a bitesize of material. Working in WebProtégé this will happen automatically. But if the manager approves of editing using an external editor such as Protégé, you will need to save and upload after every significant edit (i.e. not each word, but perhaps after each annotation has been added or edited).
+The history tab in WebProtégé will be easiest for future users to follow if every edit is small, containing only a bitesize of material. When working in WebProtégé, this will happen automatically. But if the manager approves of editing using an external editor such as Protégé, you will need to save and upload after every significant edit (i.e. not each word, but perhaps after each annotation has been added or edited).
 
 Only if a thematic edit is undertaken offline, multiple edits may be handled in a single save. In due course, we hope to have a GitHub pipeline set up to allow merging of branches (e.g. offline edits in Protégé) with the main file. Commits then will still need to be made very frequently. Over the horizon, we also hope that WebProtégé will be upgraded to allow merges with offline files without using a GitHub pipeline, or directly tied into it instead of being fully stand-alone as at present.
 
 #### Frequent Commits
-Every edit merged into WebProtégé is called a Commit. It may not be obvious what an edit is doing. Therefore WebProtégé automatically adds a title to each change you make which it merges in, focused on the activity undertaken.
+Every edit merged into WebProtégé is called a Commit. It may not be obvious what an edit is doing. Therefore WebProtégé's Class editor tab automatically adds a title to each change you make which it merges in, focused on the activity undertaken.
+
+If you use WebProtégé's OWL Entity Description Editor view, when you have made an edit, you will be offered the options to 'Apply changes now' and 'Apply changes with commit message now' (although the formatting makes both options run together so you may not realise they are two). Always choose 'Apply changes with commit message now', and add a message about what you have done.
 
 If approved by the manager to do, every Protégé upload will not only overwrite the WebProtégé base file (although it will leave Comments alone), but it will have an unhelpful generic Commit title. This needs to be changed to give a useful idea of what the edit has done, before finishing the upload. Make a quick reference to any prior discussion on the site about the topic. If there is no prior discussion about the change within the history, it may be better to have the discussion first. But if it can't be helped, then add some reasoning for the change to the Commit.
 
