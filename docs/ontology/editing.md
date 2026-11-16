@@ -50,16 +50,16 @@ Every edit merged into WebProtégé is called a Commit. It may not be obvious wh
 
 If you use WebProtégé's OWL Entity Description Editor view, when you have made an edit, you will be offered the options to 'Apply changes now' and 'Apply changes with commit message now' (although the formatting makes both options run together so you may not realise they are two). Always choose 'Apply changes with commit message now', and add a message about what you have done.
 
-If approved by the manager to do, every Protégé upload will not only overwrite the WebProtégé base file (although it will leave Comments alone), but it will have an unhelpful generic Commit title. This needs to be changed to give a useful idea of what the edit has done, before finishing the upload. Make a quick reference to any prior discussion on the site about the topic. If there is no prior discussion about the change within the history, it may be better to have the discussion first. But if it can't be helped, then add some reasoning for the change to the Commit.
+(ONLY if approved by the manager to do:) every Protégé upload will not only overwrite the WebProtégé base file, but it will have an unhelpful generic Commit title. This needs to be changed to give a useful idea of what the edit has done, before finishing the upload. Make a quick reference to any prior WebProtégé comments or GitHub discussion/issue about the topic. (WebProtégé Comments is a view which does not directly enter the ontology structure.) If there is no prior comment, discussion or issue about the change within the history, it may be better to do that first. But if it can't be helped, then add some reasoning for the change to the Commit.
 
 In due course, we hope to use a GitHub pipeline, or an upgraded version of WebProtégé, for Commits. This will prevent merges into the main file from happening without anyone consenting.
 
-NB: The primordial version of the ontology has been developed as a unitary draft, without edited Commits, but from the ALPHA2 version, the original author also became subject to this expectation.
+NB: The pre-first release version of the ontology has been developed as a unitary draft, without edited Commits, but from the ALPHA4 version, the original author also became subject to this expectation.
 
 #### Inclusive Comments
-Your early forays into collaborating may be in the form of Comments only. When you have editing privileges, still consider whether proposing a planned change in the form of a Comment might be the best way to start. (This is a WebProtégé View which does not directly enter the ontology structure.) Try to gain consent, if not consensus. Remember that your edits may be reverted if they appear controversial and have had no discussion. For new terms, make your comment against a parent class if you choose to wait before creating the new class. (Waiting may become the norm if new classes too often have to be reverted.)
+Your early forays into collaborating may be in the form of WebProtégé Comments only. When you have editing privileges, still consider whether proposing a planned change in the form of a WebProtégé comment or GitHub discussion/issue might be the best way to start. Try to gain consent, if not consensus. Remember that your edits may be reverted if they appear controversial and have had no conversation. If using WebProtégé comments for new terms, make the comments against a parent class. (NB: Waiting may become the norm if new classes too often have to be reverted.)
 
-Meanwhile, bear in mind that you can view or hide resolved comment threads using the Filter symbol in the WebProtégé Comment View or Tab.
+Meanwhile, bear in mind that you can view or hide resolved WebProtégé comments threads using the Filter symbol in the WebProtégé Comment View or Tab.
 
 ### Annotations
 
