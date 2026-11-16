@@ -18,11 +18,12 @@ Please see the footnote if you want to suggest edits to this website.[^1]
 
 #### Login
 1. You need your own account to use WebProtégé. You can Sign Up or Sign In [here](https://webprotege.stanford.edu/#login).
-2. Contact the ACTAN manager with your new username, to receive an invite to the project in WebProtégé. (In the Alpha phase, there may be restrictions even on the number of viewers or commenters, let alone editors. You may be asked to explain how you can contribute before being given an invitation. You may want to get this agreement before creating a WebProtégé account.)
-3. On your Projects list page, ensure that the 'Shared with Me' box is ticked. If you have been invited to the project, it should appear there as the latest version of 'Active Animals ALPHA'. You may need to refresh the page, or even log back in if the page has expired.
-4. Open the project by clicking the project's name, or find more opening options in the burger button.
+2. Anyone signed-in can view the last release version.
+3. But in order to edit the next release version, contact the ACTAN manager with your new username, to receive an invite to it in WebProtégé.
+4. On your Projects list page, ensure that the 'Shared with Me' box is ticked. If you have been invited to the project, it should appear there as the latest version of 'Active Animals ALPHA'. You may need to refresh the page, or even log back in if the page has expired.
+5. Open the project by clicking the project's name, or find more opening options in the burger button.
   - You can download your own legacy copies as often as you like: the project has a CC0 license and the file can be read by any owl/rdf/xml viewer.
-  - Unless you have the manager's permission, please don't download to work offline with another editor such as Protégé and then upload, as you will overwrite the whole project, losing other peoples' changes since your last download.
+  - Unless you have the manager's permission, please don't download to work offline and then upload with another editor such as Protégé. You will overwrite the whole project, losing other peoples' changes since your last download. (NB: back-ups may not be very recent).
 
 #### Guides
 A very early [slideshow](https://www.slideshare.net/slideshow/semtech-webprotegetutorial/22328670) offers glimpses into the history and utility of WebProtégé.
