@@ -69,27 +69,46 @@ NB: Annotations should not be nested inside each other, as nesting is not easily
 
 #### DO Use
 ##### For Behaviours OR Dispositions
-  - (Meaning:
-    - Annotation property
-      - Sub-Annotation property)
-  - Automatically introduced annotations for new terms are:
-    - created_by
-    - creation_date
-  - Required annotations for all new terms are:
-    - rdfs:label
+Automatically introduced annotations for new terms are:
+  - created_by
+  - creation_date
+
+Required annotations for all new terms are:
+  - rdfs:label
+  - rdfs:comment (there may be others with ad hoc notes, but one MUST contain text notes for explanatory information about three key annotation types which would otherwise be obvious if we used nested annotations):
+    - LABEL
+      - `<label>`
+      - AND
+        - `<year of publication>`
+        - source e.g. DOI
+          -  AND `<partial exclusive quote>` if not exact
+      - OR
+        - contributor ID e.g. ORCID
+    - DEFINITION
+      - 'Adapted' if clearly interpolated from your quote (and see rdfs:isDefined by below)
+        - `<full inclusive quote>`
+      - OR
+      - 'Derived' if you have used interpretation and extrapolation from a larger section of text
+        - source e.g. DOI
+        - contributor ID e.g. ORCID
+    - SYNONYMS (repeat for each one)
+      - `<label>`
+      - `<year of publication>`
+      - source e.g. DOI
+        -  AND `<partial exclusive quote>` if not exact
+  - dcterms:source (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT dc:source which isn't parsed by WebProtege.
+  - conformsTo (you must pick the correct dosdp-Pattern)
       - dc:date (only the year)
       - dc:source OR
-      - dc:contributor (i.e your details, if you have constructed a new label, but relate it to synonyms if you do; you should not *ad hoc* create terms without a related source)
-    - hasDefinition
-      - dc:source AND dc:contributor OR
-      - rdfs:isDefinedBy (where a definition is substantially quoted even if not originally intended as such AND add a skos:scopeNote here quoting the whole sentence you have quoted from)
-  - As required annotations are:
-    - hasBroadSynonym
-    - hasExactSynonym
-    - hasNarrowSynonym
-    - hasRelatedSynonym
-    - rdfs:comment (for additional, useful information)
-    - rdfs:seeAlso (where another source gives an illuminating perspective but is not necessarily synonymous)
+  - dcterms:contributor (i.e your ORCID or other details, if not automatically added.)  NB: NOT dc:contributor which isn't parsed by WebProtege.
+  - hasDefinition
+
+As required annotations are:
+  - hasBroadSynonym
+  - hasExactSynonym
+  - hasNarrowSynonym
+  - hasRelatedSynonym
+  - rdfs:seeAlso (where another source gives an illuminating perspective but is not necessarily synonymous)
     - skos:example (for valuable illustrations)
     - skos:scopeNote (for an idea about the content or limits of a concept, usually where the definition is not yet finally composed)
     - broadMatch (to link an external ontology term which is not equivalent, but fully includes your term)
