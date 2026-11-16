@@ -75,7 +75,7 @@ Automatically introduced annotations for new terms are:
 
 Required annotations for all terms are:
   - **rdfs:label**
-  - **hasDefinition**
+  - **hasDefinition** (see below for details)
   - **dcterms:contributor** (i.e your ORCID or other details, if not automatically added above.)  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
   - **dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
   - **conformsTo** (you must pick the correct dosdp-Pattern)
@@ -88,12 +88,21 @@ Required annotations for all terms are:
           -  AND `<partial exclusive quote>` if not exact
       - OR
         - contributor ID e.g. ORCID
-    - DEFINITION
-      - 'Adapted' if clearly interpolated from your quote (and see rdfs:isDefined by below)
+    - DEFINITION (and see Definitions section below)
+      - 'Adapted' (see rdfs:isDefinedby below)
         - `<full inclusive quote>`
+        - contributor ID e.g. ORCID
       - OR
-      - 'Derived' if you have used interpretation and extrapolation from a larger section of text
+      - 'Derived' (see dcterms:source below)
         - source e.g. DOI
+        - contributor ID e.g. ORCID
+      - OR
+      - 'Implied' (see rdfs:isDefinedby below)
+        - `<full inclusive quote>`
+        - contributor ID e.g. ORCID
+      - OR
+      - 'Quoted' (see rdfs:isDefinedby below)
+        - `<full inclusive quote>`
         - contributor ID e.g. ORCID
     - SYNONYMS (repeat for each one)
       - `<label>`
@@ -104,6 +113,8 @@ Required annotations for all terms are:
 As required annotations are:
   - **example of usage** (for valuable illustrations)
   - **notes** (for an idea about the content or limits of a concept)
+  - **rdfs:isDefinedby** (where you are able to add a full inclusive quote above, i.e. if it is 'Adapted', 'Implied', or 'Quoted' - see above)
+  - **dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
   - **rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
   - **hasBroadSynonym** (a synonym which is bigger than, but fully includes, your label)
   - **hasExactSynonym**
@@ -117,12 +128,17 @@ As required annotations are:
 #### DON'T Use
   - A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms.
   - Owl properties are built into Protege but should not be introduced to our ontology without management agreement.
-    - owl:deprecated should only be used after extensive discussion.
-  - hasDbXref or Xref (see the list of possible matches to use instead above)
+  - **owl:deprecated** should only be used after extensive discussion.
+  - **hasDbXref** or **Xref** (see the list of possible matches to use instead above)
 
 ### Definitions
 
-Every class should have a sourced definition, even if it has been interpolated from more general text. Use the Annotation hasDefinition.
+Every class should have a sourced definition. Use the Annotation **hasDefinition**. Options to choose from for the explanatory **rdfs:comment** above are:
+
+- 'Adapted' (if clearly interpolated from your quote)
+- 'Derived' (if you have used interpretation and extrapolation from a larger section of unquoted text to create your own mash-up)
+- 'Implied' (if a very short definition quotes just one or two words)
+- 'Quoted' (if directly copied)
 
 For more detailed guidelines, many of which have informed ours below, see the paper on[Guidelines for writing definitions in ontologies](https://revista.ibict.br/ciinf/article/view/4015)
 
