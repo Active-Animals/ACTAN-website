@@ -70,13 +70,13 @@ NB: Annotations should not be nested inside each other, as nesting is not easily
 #### DO Use
 ##### For Behaviours OR Dispositions
 Automatically introduced annotations for new terms are:
-  - created_by
-  - creation_date
+  - **created_by**
+  - **creation_date**
 
 Required annotations for all terms are:
   - **rdfs:label**
-  - **hasDefinition** (see below for details)
-  - **dcterms:contributor** (i.e your ORCID or other details, if not automatically added above.)  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
+  - **hasDefinition** (see [below](#definitions) for details)
+  - **dcterms:contributor** (unless you are automatically cited as creating the term; see [below](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
   - **dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
   - **conformsTo** (you must pick the correct dosdp-Pattern)
   - **rdfs:comment** (there may be others with ad hoc notes, but one MUST contain text notes for explanatory information about three key annotation types which would otherwise be obvious if we used nested annotations):
@@ -111,15 +111,15 @@ Required annotations for all terms are:
         -  AND `<partial exclusive quote>` if not exact
 
 As required annotations are:
-  - **example of usage** (for valuable illustrations)
+  - **example of usage** (see [below](#examples))
   - **notes** (for an idea about the content or limits of a concept)
   - **rdfs:isDefinedby** (where you are able to add a full inclusive quote above, i.e. if it is 'Adapted', 'Implied', or 'Quoted' - see above)
   - **dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
   - **rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
-  - **hasBroadSynonym** (a synonym which is bigger than, but fully includes, your label)
-  - **hasExactSynonym**
-  - **hasNarrowSynonym** (a synonym which is smaller than, and fully included by, your label)
-  - **hasRelatedSynonym** (a synonym which is explanatory, or to save confusion when it is being used as a label or synonym in another place in the ontology)
+  - **hasBroadSynonym** (see [below](#synonyms))
+  - **hasExactSynonym** (see [below](#synonyms))
+  - **hasNarrowSynonym** (see [below](#synonyms))
+  - **hasRelatedSynonym** (see [below](#synonyms))
   - **broadMatch** (to link an external ontology term which is not equivalent, but fully includes your term)
   - **closeMatch** (to link an external ontology term which is almost equivalent to your term - most likely in NBO - the neuro-behaviour ontology. You should not use direct equivalence or *DbXref*, since we should instead import and use the external term. NB: given that NBO is effectively defunct, no imports or direct equivalence should be used with it)
   - **narrowMatch** (to link an external ontology term which is not equivalent, but is fully included by your term)
@@ -128,7 +128,7 @@ As required annotations are:
 #### DON'T Use
   - A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms.
   - Owl properties are built into Protege but should not be introduced to our ontology without management agreement.
-  - **owl:deprecated** should only be used after extensive discussion.
+  - **owl:deprecated** (see [below](#obsoletions))
   - **hasDbXref** or **Xref** (see the list of possible matches to use instead above)
 
 ### Definitions
@@ -140,7 +140,7 @@ Every class should have a sourced definition. Use the Annotation **hasDefinition
 - 'Implied' (if a very short definition quotes just one or two words)
 - 'Quoted' (if directly copied)
 
-For more detailed guidelines, many of which have informed ours below, see the paper on[Guidelines for writing definitions in ontologies](https://revista.ibict.br/ciinf/article/view/4015)
+For more detailed guidelines, many of which have informed ours below, see the paper on [Guidelines for writing definitions in ontologies](https://revista.ibict.br/ciinf/article/view/4015)
 
 #### Meaning
 Before starting, consider whether your new definition will change the meaning of the class's ground concept. (The two are not always identical). This can be broadly assessed by considering the existing label, parent, children, siblings, examples, comments, scope notes, properties, and any sources referred to already.
@@ -293,7 +293,7 @@ The key for a definition is not so much its precedence, as its accuracy, inclusi
 Editors who create new terms using the WebProtégé portal will automatically have the date and the creator added, and also an ID number which will remain exclusive to that class despite future edits.
 
 #### Contribution
-All contributors are encouraged to flag their own inputs with annotation property dc:contributor, preferably using an [ORCID](https://orcid.org) ID or something similar, although your name is acceptable (but not just initials or username).
+All contributors should flag their own involvement in editing a particular class, with annotation property dcterms:contributor, using an [ORCID](https://orcid.org) ID or something similar with an IRI.
 
 #### Examples
 The number of examples should be very constricted, preferably to one overall, but up to one each of the following criteria if necessary. Please don't delete examples or add a fourth (or more) without a discussion in the relevant page's WebProtégé comment tab. It should balance:
