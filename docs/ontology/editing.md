@@ -67,7 +67,9 @@ Annotations should not be nested inside each other, as they are not easily viewe
 
 #### AUTOMATIC
 For new terms WebProtégé adds:
+
 **created_by**
+
 **creation_date**
 
 #### REQUIRED
