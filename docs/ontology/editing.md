@@ -81,7 +81,7 @@ All terms need:
 
 **dcterms:contributor** (unless you are automatically cited as creating the term; see [below](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
 
-**dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used; see [below](#sourcing) for details.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+**dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
 
 **conformsTo** (you must pick the correct dosdp-Pattern)
 
@@ -225,7 +225,7 @@ The same word may have different meanings in different sources. The binomial sys
 
 It is not our role to judge the validity of an assertion. Before considering incompatibility, be sure you are not better served with a [Synonym](#synonyms).
 
-However, scientific ideas evolve and new ideas emerge which may be incompatible with former ones, and we need to be able to differentiate these assertions from one another. With sufficient consensus, an rdfs:Comment can be added to the effect that it is an INACTIVE TERM or a HISTORICAL TERM, simply meaning that it should not be used for ongoing annotation.  Where a concept is directly criticised in a source as obsolete, defunct, or a similar appelation, consider using the annotation property 'skos:scopeNote' to quote or summarise the criticism, along with 'dc:source'.
+However, scientific ideas evolve and new ideas emerge which may be incompatible with former ones, and we need to be able to differentiate these assertions from one another. With sufficient consensus, an rdfs:Comment can be added to the effect that it is an INACTIVE TERM or a HISTORICAL TERM, simply meaning that it should not be used for ongoing annotation.  Where a concept is directly criticised in a source as obsolete, defunct, or a similar appelation, consider using the annotation property 'notes' to quote or summarise the criticism, along with 'dcterms:source'.
 
 If incompatibility is clear, then create a new term. Annotate both with rdfs:seeAlso. 
 
@@ -283,7 +283,11 @@ Our binomial labelling system is anthroponymic (quasi-patronymic/matronymic): a 
 Among behaviours, every effort is being made to ensure that we only use nouns and gerunds in names, although there will be some (hopefully interim) labels where it is difficult to replace an adjective (e.g. demersal spawning and pelagic spawning). Whilst some labels appear to scan as comfortable adjective/noun combinations because of gerund placements or as familiar adjunct nouns, others will appear jarring word combinations. Remember that the binomen is not designed to be either in principle, and uncomfortable names in this context are expected to crop up often, not least if an adjective/adjunct/noun construction was anticipated but didn't materialise.
 
 #### Sourcing
-The term itself should be sourced if possible (although a slightly different word form is okay). A sub-annotation should be added with a dc:source. If the term can only (but easily) be inferred from a source, add an rdfs:comment as a sub-annotation.
+The term itself should be sourced if possible. An annotation should be added with a **dcterms:source**.  
+
+A verb can be turned into a gerund or noun if it is natural and easily inferred from a source. A noun is usually best, unless some convention is being used (e.g. gerunds for movements and nouns for placements). Add a quote in the explanatory **rdfs:comment** (see [above](#required)) if you have made any wording changes at all. If a noun and gerund are both options, consider recording the gerund as a synonym.
+
+Use your creativity to construct a binomial term, but only if it derives from a sourced exact synonym. In this case your source will relate to a synonym, so in the explanatory **rdfs:comment** (see [above](#required)) you must add your contributor ID.
 
 ### Precedence
 
