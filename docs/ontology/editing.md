@@ -283,7 +283,7 @@ Our binomial labelling system is anthroponymic (quasi-patronymic/matronymic): a 
 Among behaviours, every effort is being made to ensure that we only use nouns and gerunds in names, although there will be some (hopefully interim) labels where it is difficult to replace an adjective (e.g. demersal spawning and pelagic spawning). Whilst some labels appear to scan as comfortable adjective/noun combinations because of gerund placements or as familiar adjunct nouns, others will appear jarring word combinations. Remember that the binomen is not designed to be either in principle, and uncomfortable names in this context are expected to crop up often, not least if an adjective/adjunct/noun construction was anticipated but didn't materialise.
 
 #### Sourcing
-The term itself should be sourced if possible. An annotation should be added with a **dcterms:source**.  
+The term itself should be sourced if possible. An annotation should be added with a **dcterms:source**. NB: don't use *dc:source* because it isn’t parsed by WebProtégé.
 
 A verb can be turned into a gerund or noun if it is natural and easily inferred from a source. A noun is usually best, unless some convention is being used (e.g. gerunds for movements and nouns for placements). Add a quote in the explanatory **rdfs:comment** (see [above](#required)) if you have made any wording changes at all. If a noun and gerund are both options, consider recording the gerund as a synonym.
 
@@ -312,7 +312,7 @@ The key for a definition is not so much its precedence, as its accuracy, inclusi
 Editors who create new terms using the WebProtégé portal will automatically have the date and the creator added, and also an ID number which will remain exclusive to that class despite future edits.
 
 #### Contribution
-All contributors should flag their own involvement in editing a particular class, with annotation property dcterms:contributor, using an [ORCID](https://orcid.org) ID or something similar with an IRI.
+All contributors should flag their own involvement in editing a particular class, with annotation property **dcterms:contributor**, using an [ORCID](https://orcid.org) ID or something similar with an IRI. NB: don't use *dc:contributor* because it isn't parsed by WebProtégé.
 
 #### Examples
 The number of examples should be very constricted, preferably to one overall, but up to one each of the following criteria if necessary. Please don't delete examples or add a fourth (or more) without a discussion in the relevant page's WebProtégé comment tab. It should balance:
