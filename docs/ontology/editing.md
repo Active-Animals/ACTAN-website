@@ -82,6 +82,7 @@ All terms need:
 **dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used; see [below](#sourcing) for details.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
 
 **conformsTo** (you must pick the correct dosdp-Pattern)
+
 Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one MUST contain text notes for information about three key annotation types which would otherwise be obvious if we used nested annotations):
   - LABEL
     - `<label>`
@@ -151,7 +152,7 @@ A number of Annotation Properties belonging to external ontologies may have been
 
 ### Definitions
 
-Every class should have a sourced definition. Use the Annotation **hasDefinition**. Options to choose from for the explanatory **rdfs:comment** above are:
+Every class should have a sourced definition. Use the Annotation **hasDefinition**. Options to choose from for the explanatory **rdfs:comment** [above](#required) are:
 
 - 'Adapted' (if clearly interpolated from your quote)
 - 'Derived' (if you have used interpretation and extrapolation from a larger section of unquoted text to create your own mash-up)
