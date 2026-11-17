@@ -65,69 +65,89 @@ They are most easily added to the ontology via the 'Annotations' section of the 
 
 Annotations should not be nested inside each other, as they are not easily viewed or performed using WebProtégé.
 
-#### DO Use
-##### For Behaviours OR Dispositions
-Automatically introduced annotations for new terms are:
-  - **created_by**
-  - **creation_date**
+#### AUTOMATIC
+For new terms WebProtégé adds:
+**created_by**
+**creation_date**
 
-Required annotations for all terms are:
-  - **rdfs:label**
-  - **hasDefinition** (see [below](#definitions) for details)
-  - **dcterms:contributor** (unless you are automatically cited as creating the term; see [below](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
-  - **dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
-  - **conformsTo** (you must pick the correct dosdp-Pattern)
-  - **rdfs:comment** (there may be others with ad hoc notes, but one MUST contain text notes for explanatory information about three key annotation types which would otherwise be obvious if we used nested annotations):
-    - LABEL
-      - `<label>`
-      - AND
-        - `<year of publication>`
-        - source e.g. DOI
-          -  AND `<partial exclusive quote>` if not exact
-      - OR
-        - contributor ID e.g. ORCID
-    - DEFINITION (and see Definitions section below)
-      - 'Adapted' (see rdfs:isDefinedby below)
-        - `<full inclusive quote>`
-        - contributor ID e.g. ORCID
-      - OR
-      - 'Derived' (see dcterms:source below)
-        - source e.g. DOI
-        - contributor ID e.g. ORCID
-      - OR
-      - 'Implied' (see rdfs:isDefinedby below)
-        - `<full inclusive quote>`
-        - contributor ID e.g. ORCID
-      - OR
-      - 'Quoted' (see rdfs:isDefinedby below)
-        - `<full inclusive quote>`
-        - contributor ID e.g. ORCID
-    - SYNONYMS (repeat for each one)
-      - `<label>`
+#### REQUIRED
+All terms need:
+
+**rdfs:label**
+
+**hasDefinition** (see [below](#definitions) for details)
+
+**dcterms:contributor** (unless you are automatically cited as creating the term; see [below](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
+
+**dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used; see [below](#sourcing) for details.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+
+**conformsTo** (you must pick the correct dosdp-Pattern)
+Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one MUST contain text notes for information about three key annotation types which would otherwise be obvious if we used nested annotations):
+  - LABEL
+    - `<label>`
+    - AND
       - `<year of publication>`
       - source e.g. DOI
         -  AND `<partial exclusive quote>` if not exact
+    - OR
+      - contributor ID e.g. ORCID
+  - DEFINITION
+    - 'Adapted' (see rdfs:isDefinedby below)
+      - `<full inclusive quote>`
+      - contributor ID e.g. ORCID
+    - OR
+    - 'Derived' (see dcterms:source below)
+      - source e.g. DOI
+      - contributor ID e.g. ORCID
+    - OR
+    - 'Implied' (see rdfs:isDefinedby below)
+      - `<full inclusive quote>`
+      - contributor ID e.g. ORCID
+    - OR
+    - 'Quoted' (see rdfs:isDefinedby below)
+      - `<full inclusive quote>`
+      - contributor ID e.g. ORCID
+  - SYNONYMS (repeat for each one)
+    - `<label>`
+    - `<year of publication>`
+    - source e.g. DOI
+      -  AND `<partial exclusive quote>` if not exact
 
-As required annotations are:
-  - **example of usage** (see [below](#examples))
-  - **notes** (for an idea about the content or limits of a concept)
-  - **rdfs:isDefinedby** (where you are able to add a full inclusive quote above, i.e. if it is 'Adapted', 'Implied', or 'Quoted' - see above)
-  - **dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
-  - **rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
-  - **hasBroadSynonym** (see [below](#synonyms))
-  - **hasExactSynonym** (see [below](#synonyms))
-  - **hasNarrowSynonym** (see [below](#synonyms))
-  - **hasRelatedSynonym** (see [below](#synonyms))
-  - **broadMatch** (to link an external ontology term which is not equivalent, but fully includes your term)
-  - **closeMatch** (to link an external ontology term which is almost equivalent to your term - most likely in NBO - the neuro-behaviour ontology. You should not use direct equivalence or *DbXref*, since we should instead import and use the external term. NB: given that NBO is effectively defunct, no imports or direct equivalence should be used with it)
-  - **narrowMatch** (to link an external ontology term which is not equivalent, but is fully included by your term)
-  - **relatedMatch** (to link an external ontology term which significantly but incompletely overlaps with your term)
+#### DISCRETIONARY
+As required, use:
 
-#### DON'T Use
-  - A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms.
-  - Owl properties are built into Protege but should not be introduced to our ontology without management agreement.
-  - **owl:deprecated** (see [below](#obsoletions))
-  - **hasDbXref** or **Xref** (see the list of possible matches to use instead above)
+**example of usage** (see [below](#examples))
+
+**notes** (for an idea about the content or limits of a concept)
+
+**rdfs:isDefinedby** (where you are able to add a full inclusive quote above, i.e. if it is 'Adapted', 'Implied', or 'Quoted' - see above)
+
+**dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+
+**rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
+
+**hasBroadSynonym** (see [below](#synonyms))
+
+**hasExactSynonym** (see [below](#synonyms))
+
+**hasNarrowSynonym** (see [below](#synonyms))
+
+**hasRelatedSynonym** (see [below](#synonyms))
+
+**broadMatch** (to link an external ontology term which is not equivalent, but fully includes your term)
+
+**closeMatch** (to link an external ontology term which is almost equivalent to your term - most likely in NBO - the neuro-behaviour ontology. You should not use direct equivalence or *DbXref*, since we should instead import and use the external term. NB: given that NBO is effectively defunct, no imports or direct equivalence should be used with it)
+
+**narrowMatch** (to link an external ontology term which is not equivalent, but is fully included by your term)
+
+**relatedMatch** (to link an external ontology term which significantly but incompletely overlaps with your term)
+
+#### DON'T USE
+A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms. Owl properties are built into Protege but should not be introduced to our ontology without management agreement.
+
+**owl:deprecated** (see [below](#obsoletions))
+
+**hasDbXref** or **Xref** (see the list of possible matches above to use instead)
 
 ### Definitions
 
