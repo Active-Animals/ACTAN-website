@@ -294,7 +294,7 @@ Use your creativity to construct a binomial term, but only if it derives from a 
 This section explains which sources or contributors should have priority in our ontology.
 
 #### Principles
-1. Any source must be legally, publicly accessible, even if the DOI or ISBN or catalogue number does not link directly to such a source. (Digital media should be available free and online via links from within a Google Scholar, or Internet Archive Scholar, or JSTOR free personal account search.)
+1. Any source must be legally, publicly accessible when identified, even if the DOI or ISBN or catalogue number does not link directly to such a source. (Digital media should be available free and online via links from within a Google Scholar, or Internet Archive Scholar, or JSTOR free personal account search.) If it is not, or no longer, identifiable, don't update to a new source unless you have raised a GitHub Discussion/Issue.
 2. The oldest such source to use the term should be referenced.
 3. The oldest source need not incorporate every facet of the topic, so long as it does not lie outside, or contradict, a class's definition.
 
