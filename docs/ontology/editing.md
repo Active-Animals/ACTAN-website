@@ -152,23 +152,20 @@ A number of Annotation Properties belonging to external ontologies may have been
 
 ### Definitions
 
-Every class should have a sourced definition. Use the Annotation **hasDefinition**. Options to choose from for the explanatory **rdfs:comment** [above](#required) are:
+Every class should have a sourced definition. Use the Annotation **hasDefinition**.
 
-- 'Adapted' (if clearly interpolated from your quote)
-- 'Derived' (if you have used interpretation and extrapolation from a larger section of unquoted text to create your own mash-up)
-- 'Implied' (if a very short definition quotes just one or two words)
-- 'Quoted' (if directly copied)
+More than one source may have been used in legacy definitions, but this should not be emulated, and existing ones should be appropriately replaced.
 
 For more detailed guidelines, many of which have informed ours below, see the paper on [Guidelines for writing definitions in ontologies](https://revista.ibict.br/ciinf/article/view/4015)
 
 #### Meaning
-Before starting, consider whether your new definition will change the meaning of the class's ground concept. (The two are not always identical). This can be broadly assessed by considering the existing label, parent, children, siblings, examples, comments, scope notes, properties, and any sources referred to already.
+Before starting, consider whether your new definition will change the meaning of the class's ground concept. (The two are not always identical). This can be broadly assessed by considering the existing label, synonyms, parent, children, siblings, examples, comments, notes, properties, and any sources referred to already.
 
 Be more wary if there is already a textual definition and you wish to change it: consider whether your new definition will be inclusive of it (i.e. is your new definition more general, NOT more specific).
 
 Lastly, consider whether your definition will directly aid (or improve) the identification of the behaviour in question. If all these issues are answered positively, go ahead.
 
-NB: A very strict form of ontological reasoning will argue that there is no intrinsic difference between a concept and an accurate axiomatic definition. Therefore changing the concept will necessarily require changing a logical definition, which must necessarily require creation of a new term. However, humanly useable ontologies like ours do not fully axiomatise their 'ground concepts' in the form of logical definitions. Because they are not written strictly for machine learning, what we are doing is generally accepted.
+(A very strict form of ontological reasoning will argue that there is no intrinsic difference between a concept and an accurate axiomatic definition. Therefore changing the concept will necessarily require changing a logical definition, which must necessarily require creation of a new term. However, humanly useable ontologies like ours do not fully axiomatise their ‘ground concepts’ in the form of logical definitions. Because they are not written strictly for machine learning, what we are doing is generally accepted.)
 
 #### Constructing
 Ignoring the parts in (rounded brackets), use the construction:
@@ -183,17 +180,14 @@ Use the immediate binomial or trinomial for Y if it will aid understanding, e.g.
 NB: A class definition's genus is its parent's binomen, although this may be abbreviated to the parent's first name if the meaning is clear.
 
 #### Creating
-Where a source is essentially being quoted for the definition, sub-annotate with rdfs:isDefinedBy and skos:scopeNote (quoting the whole sentence or sentences from which the definition is drawn). There is no need to add dc:contributor as a sub-annotation to the definition, but by all means add it as a top term Annotation.
+Every definition must be sourced, even if not quoted, and referenced by **rdfs:isDefinedby** or **dcterms:source** (see [above](#discretionary)).
 
-Limited edits may be needed, such as modifying word endings, or cutting and splicing very close elements contained within a single sentence (or possibly adjoining sentences), and preferably without reversing word order.
+Limited edits may be needed, such as modifying word endings, or cutting and splicing very close elements contained within a single sentence (or possibly adjoining sentences), and preferably without reversing word order. Options to choose from for the explanatory **rdfs:comment** [above](#required) are:
 
-A quoted definition may be made more parsimonious by dropping a superfluous component, but not if it simply generalises the definition (i.e. not if the dropped component would effectively create a sub-division). Word changes should also be avoided, particularly if the definition would be made more generic (e.g. by changing 'fish' to 'animal').
-
-Otherwise, even if the bulk of the definition comprises quotes, use hasDefinition, with dc:source and dc:contributor as sub-annotations (and avoid rdfs:isDefinedBy).
-
-Where more than one source is used to create a definition, give each as a sub-annotated dc:source. This should only rarely be needed.
-
-REMEMBER: Every definition must be sourced, even if not quoted.
+- 'Adapted' (if clearly interpolated from your quote)
+- 'Derived' (if you have used interpretation and extrapolation from a larger section of unquoted text to create your own mash-up)
+- 'Implied' (if a very short definition quotes just one or two words)
+- 'Quoted' (if directly copied)
 
 #### Expanding
 To expand the definition beyond its essential core, use additional text following a full-stop (rather than a comma, colon, or semicolon).
