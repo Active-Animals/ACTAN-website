@@ -41,25 +41,21 @@ If you really want to delve into ontology engineering (including desktop Protég
 ### Always...
 
 #### Small bites
-The history tab in WebProtégé will be easiest for future users to follow if every edit is small, containing only a bitesize of material. When working in WebProtégé, this will happen automatically. But if the manager approves of editing using an external editor such as Protégé, you will need to save and upload after every significant edit (i.e. not each word, but perhaps after each annotation has been added or edited).
+The history tab in WebProtégé will be easiest to follow if every edit is small, containing only a bitesize of material. When working in the WebProtégé *Class* editing view, this will happen automatically. If the manager approves of you editing using an external editor such as Protégé, you will need to save and upload after every significant edit. (Perhaps after each annotation has been added or edited.) Only when a thematic edit is undertaken offline, will multiple edits be handled in a single save.
 
-Only if a thematic edit is undertaken offline, multiple edits may be handled in a single save. In due course, we hope to have a GitHub pipeline set up to allow merging of branches (e.g. offline edits in Protégé) with the main file. Commits then will still need to be made very frequently. Over the horizon, we also hope that WebProtégé will be upgraded to allow merges with offline files without using a GitHub pipeline, or directly tied into it instead of being fully stand-alone as at present.
+#### Frequent commits
+Every edit merged into WebProtégé is called a commit. Without a notes, it may not be easy in future to work out what an edit was doing. Therefore WebProtégé's *Class* editing view automatically adds a commit message to each change you make, based on the activity undertaken.
 
-#### Frequent Commits
-Every edit merged into WebProtégé is called a Commit. It may not be obvious what an edit is doing. Therefore WebProtégé's Class editor tab automatically adds a title to each change you make which it merges in, focused on the activity undertaken.
+If you use WebProtégé's *OWL Entity Description Editor* view, when you have made an edit, you will be offered the options to 'Apply changes now' and 'Apply changes with commit message now'. (NB: The formatting makes both options run together, so you may not realise they are two.) Always choose 'Apply changes with commit message now', and add a message about what you have done.
 
-If you use WebProtégé's OWL Entity Description Editor view, when you have made an edit, you will be offered the options to 'Apply changes now' and 'Apply changes with commit message now' (although the formatting makes both options run together so you may not realise they are two). Always choose 'Apply changes with commit message now', and add a message about what you have done.
+**(ONLY if approved by the manager)** every Protégé upload will not only overwrite the WebProtégé base file, but it will have an unhelpfully generic automatic commit message. This needs to be changed to give a useful idea of what the edit has done, before merging the upload. Make a quick reference to any prior WebProtégé comments or GitHub discussion/issue about the topic. (WebProtégé *comments* is a view which does not directly enter the ontology structure.) If there is no prior comment, discussion or issue about the change within the history, it may be better to do that first. But if it can't be helped, then add some reasoning for the change to the commit.
 
-(ONLY if approved by the manager to do:) every Protégé upload will not only overwrite the WebProtégé base file, but it will have an unhelpful generic Commit title. This needs to be changed to give a useful idea of what the edit has done, before finishing the upload. Make a quick reference to any prior WebProtégé comments or GitHub discussion/issue about the topic. (WebProtégé Comments is a view which does not directly enter the ontology structure.) If there is no prior comment, discussion or issue about the change within the history, it may be better to do that first. But if it can't be helped, then add some reasoning for the change to the Commit.
+NB: The pre-first release version of the ontology was developed as a unitary draft, without edited commits. From the ALPHA4 version onwards, the original author is also subject to this expectation.
 
-In due course, we hope to use a GitHub pipeline, or an upgraded version of WebProtégé, for Commits. This will prevent merges into the main file from happening without anyone consenting.
+#### Inclusive comments
+Your early forays into collaborating may be in the WebProtégé *Comments* view or GitHub Discussions/Issues only. When you have editing privileges, still consider whether proposing a planned change in the form of WebProtégé *Comments* or a GitHub Discussion/Issue might be the best way to start. Try to gain consent, if not consensus. Remember that your edits may be reverted if they appear controversial and have had no conversation.
 
-NB: The pre-first release version of the ontology has been developed as a unitary draft, without edited Commits, but from the ALPHA4 version, the original author also became subject to this expectation.
-
-#### Inclusive Comments
-Your early forays into collaborating may be in the form of WebProtégé Comments only. When you have editing privileges, still consider whether proposing a planned change in the form of a WebProtégé comment or GitHub discussion/issue might be the best way to start. Try to gain consent, if not consensus. Remember that your edits may be reverted if they appear controversial and have had no conversation. If using WebProtégé comments for new terms, make the comments against a parent class. (NB: Waiting may become the norm if new classes too often have to be reverted.)
-
-Meanwhile, bear in mind that you can view or hide resolved WebProtégé comments threads using the Filter symbol in the WebProtégé Comment View or Tab.
+If using WebProtégé *Comments* for new terms, make them against the proposed parent class. Bear in mind that you can view or hide resolved threads using the Filter symbol in the WebProtégé *Comments* view. Because WebProtégé *Comments* will restart empty for each new pre-release edit version, it is best practice to use GitHub Discussions/Issues.
 
 ### Annotations
 
