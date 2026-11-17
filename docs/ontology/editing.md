@@ -349,7 +349,7 @@ Many of our terms could have been reused from the [Neuro-Behavioural Ontology](h
 
 ### Relationships
 
-Every parent-child relationship is automatically accorded the inclusion 'is_a' (which is invisible to us). Be careful not to introduce circularity by making something a subclass of itself somewhere else in the map.
+Every parent-child relationship is automatically accorded the relation 'is_a' (which is invisible to us). Be careful not to introduce circularity by making something a subclass of itself somewhere else in the map.
 
 Also be cautious about the direction of other kinds of relationship (called object properties) you add to a term, as it can affect reasoning if it is wrong (e.g. 'part_of' instead of 'has_part' can introduce the enigma in which, "all cats are animals and all animals are cats"). Our aim is to keep the number and kinds of relationship simple and limited. Feel free to introduce your argument in a WebProtégé comment if you feel the need for a new one. Only a manager should introduce new kinds of relationship.
 
@@ -357,41 +357,28 @@ Delving under the surface of ontology engineering will reveal two basic types of
 
 #### Object Properties
 ##### has_part
-This should only be used when relating two pieces of data of the same type. In our case, one behaviour may has_part another behaviour, because both are occurrents. (Similarly, one anatomical structure may has_ part another one, because both are continuants.)
+This should only be used when relating two pieces of data of the same type. In our case, one `<behaviour has_part 'another behaviour'>`, because both are occurrents. (Similarly, one anatomical structure may has_ part another one, because both are continuants.)
 
-Bear in mind before adding the relation, that the class which has_ part another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [part_of](#part_of).
-
-NB: A Reasoner in Desktop Protégé may not flag misuse of this object property, because it is inherently defined rather loosely, and needs additional axioms to raise flags.
-
-##### part_of
-This should not currently be used in our ontology to reduce confusion, but would be used when relating two pieces of data of the same type. E.g. one behaviour may be part_of another behaviour, because both are occurrents. (Similarly, one anatomical structure may be part_of another one, because both are continuants.)
-
-Bear in mind that the class which is part_of another class must ALWAYS be so to be axiomatically correct. This is the inverse relation of [has_part](#has_part)
+Bear in mind before adding the relation, that the class which has_ part another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **part_of** (which should not currently be used in our ontology).
 
 NB: A Reasoner in Desktop Protégé may not flag misuse of this object property, because it is inherently defined rather loosely, and needs additional axioms to raise flags.
 
 ##### has_participant
-This should only be used when relating an occurrent to a continuant, and even then, only in one direction (occurrent has_participant continuant). It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
+This should only be used when relating an occurrent (e.g. a behaviour) to a continuant, and even then, only in one direction: `<behaviour has_participant continuant>`. It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
 
-Bear in mind before adding the relation, that the class which has_participant another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [participates_in](#participates_in).
-
-##### participates_in
-This should not currently be used in our ontology to reduce confusion, but would be used when relating a continuant to an occurrent, and even then, only in one direction (continuant participates_in occurrent ). It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
-
-Bear in mind that the class which participates_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [has_participant](#has_participant).
+Bear in mind before adding the relation, that the class which has_participant another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **participates_in** (which should not currently be used in our ontology).
 
 ##### realizes
-This should only be used when an occurrent relates to a realizable entity (a special type of continuant), i.e. occurrent realizes realizable entity.
+This should only be used when an occurrent relates to a realizable entity, which is a special type of continuant: `<behaviour realizes 'realizable entity'>`.
 
-Bear in mind before adding the relation, that the class which realizes another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [realized_in](#realized_in).
-
-##### realized_in
-This should not currently be used in our ontology to reduce confusion, but would be used when a realizable entity (a special type of continuant) relates to an occurrent, i.e. realizable entity realized_in occurrent.
-
-Bear in mind that the class which is realized_in another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of [realizes](#realizes).
+Bear in mind before adding the relation, that the class which realizes another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **realized_in** (which should not currently be used in our ontology).
 
 ##### has_quality
-This should only be used when relating an occurrent to a quality (a particular form of continuant found most commonly in PATO). In our case, a behaviour may has_quality such a quality. (Formally, since has_quality is a sub-set of has_characteristic, the relationship should not work. However, some clever compromises underlying the relationship allow it to appear to work in just this special case.) This will be one of the most common connections our ontology makes to its imported classes.
+This is used frequently in our ontology, but needs to be used carefully, and only to our behaviour terms, not our disposition terms. There are three ways we can apply it:
+
+  1. **process characteristic (PATO:0001236)** - A special subset of imported continuant terms; these can be applied to occurrents. (Formally, the relationship should not work. However, some clever logical reasoning underlying the relationship allows it to work in just this special case.) These terms can be applied directly and are the easiest to use, although it has limited scope, having few available terms: `<behaviour has_quality 'process characteristic'>`.
+  2. **physical object characteristic (PATO:0001241)** - This subset of imported continuant terms can only be applied to continuants. It has significant utility to us because it has such a large range of available terms. However, because they cannot be applied directly to occurrents such as behaviour, an equivalence axiom needs to be constructed which first relates our behaviour to a material participant and then relates the participant to the characteristic: `<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic')))>`
+  3. **modifier characteristic (PATO:0102001)** - This short list of imported continuant terms are rarely going to be applied in an equivalence axiom to the characteristic being applied to our behaviour; they can not be applied directly to it: `<behaviour and (has_quality some ('process characteristic' and (has_quality some 'modifier characteristic')))>` or `<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic' and (has_quality some 'modifier characteristic'))))>`
 
 Bear in mind before adding the relation, that the class which has_quality another class must ALWAYS do so to be axiomatically correct. We will never see its inverse relation, as the aforesaid compromises are not simply reversible.
 
@@ -406,8 +393,6 @@ You can reference an imported class in this ontology. Missing terms can be searc
 The new term must belong to an ontology which offers an appropriate Creative Commons license or equivalent permission. If an as yet unimported term is wanted, check our ontology's [Licenses](licences) page to see if the ontology is already covered. The license type will need to be referenced there before an edit can import one of its terms; only an editor with management's permission can approve the license of a new ontology for import to this ontology.
 
 It is possible to edit imported terms, by deleting superfluous material. But never inject new material into an import and don't modify the original rdfs:label.
-
-NB: In due course, we expect to expel almost all imported classes, and only provide external links to them in our Annotations.
 
 -----
 
