@@ -44,7 +44,7 @@ If you really want to delve into ontology engineering (including desktop Protég
 The history tab in WebProtégé will be easiest to follow if every edit is small, containing only a bitesize of material. When working in the WebProtégé *Class* editing view, this will happen automatically. If the manager approves of you editing using an external editor such as Protégé, you will need to save and upload after every significant edit. (Perhaps after each annotation has been added or edited.) Only when a thematic edit is undertaken offline, will multiple edits be handled in a single save.
 
 #### Frequent commits
-Every edit merged into WebProtégé is called a commit. Without a notes, it may not be easy in future to work out what an edit was doing. Therefore WebProtégé's *Class* editing view automatically adds a commit message to each change you make, based on the activity undertaken.
+Every edit merged into WebProtégé is called a commit. Without a note, it may not be easy in future to work out what an edit was doing. Therefore WebProtégé's *Class* editing view automatically adds a commit message to each change you make, based on the activity undertaken.
 
 If you use WebProtégé's *OWL Entity Description Editor* view, when you have made an edit, you will be offered the options to 'Apply changes now' and 'Apply changes with commit message now'. (NB: The formatting makes both options run together, so you may not realise they are two.) Always choose 'Apply changes with commit message now', and add a message about what you have done.
 
@@ -75,15 +75,15 @@ For new terms WebProtégé adds:
 #### REQUIRED
 All terms need:
 
-**rdfs:label**
+**rdfs:label** (see [New Terms](#new-terms)
 
-**hasDefinition** (see [below](#definitions) for details)
+**hasDefinition** (see [Definitions](#definitions))
 
-**dcterms:contributor** (unless you are automatically cited as creating the term; see [below](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
+**dcterms:contributor** (unless you are automatically cited as creating the term; see [Contribution](#contribution))  NB: NOT *dc:contributor* which isn't parsed by WebProtégé.
 
-**dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+**dcterms:source** (At least one, unless it is ONLY in rdfs:isDefinedby, but it could be both; add another for every source used; see [Sourcing](#sourcing)) NB: NOT *dc:source* which isn't parsed by WebProtégé.
 
-**conformsTo** (you must pick the correct dosdp-Pattern)
+**conformsTo** (you must pick the correct [DOSDPattern](#patterns))
 
 Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one MUST contain text notes for information about three key annotation types which would otherwise be obvious if we used nested annotations):
   - LABEL
@@ -119,23 +119,23 @@ Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one M
 #### DISCRETIONARY
 As required, use:
 
-**example of usage** (see [below](#examples))
+**example of usage** (see [Examples](#examples))
 
 **notes** (for an idea about the content or limits of a concept)
 
 **rdfs:isDefinedby** (where you are able to add a full inclusive quote above, i.e. if it is 'Adapted', 'Implied', or 'Quoted' - see above)
 
-**dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above.) NB: NOT *dc:source* which isn't parsed by WebProtégé.
+**dcterms:source** (Excluding the required explanatory comment above, add another for every source used including where a definition is only 'Derived' - see above; and see [Sourcing](#sourcing).) NB: NOT *dc:source* because it isn't parsed by WebProtégé.
 
-**rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous)
+**rdfs:seeAlso** (where another source gives an illuminating perspective but is not necessarily synonymous; see [Sourcing](#sourcing))
 
-**hasBroadSynonym** (see [below](#synonyms))
+**hasBroadSynonym** (see [Synonyms](#synonyms))
 
-**hasExactSynonym** (see [below](#synonyms))
+**hasExactSynonym** (see [Synonyms](#synonyms))
 
-**hasNarrowSynonym** (see [below](#synonyms))
+**hasNarrowSynonym** (see [Synonyms](#synonyms))
 
-**hasRelatedSynonym** (see [below](#synonyms))
+**hasRelatedSynonym** (see [Synonyms](#synonyms))
 
 **broadMatch** (to link an external ontology term which is not equivalent, but fully includes your term)
 
@@ -148,7 +148,7 @@ As required, use:
 #### DON'T USE
 A number of Annotation Properties belonging to external ontologies may have been retained for their broad utility, but please don't use them for our terms. Owl properties are built into Protege but should not be introduced to our ontology without management agreement.
 
-**owl:deprecated** (see [below](#obsoletions))
+**owl:deprecated** (see [Obsoletions](#obsoletions))
 
 **hasDbXref** or **Xref** (see the list of possible matches above to use instead)
 
@@ -215,7 +215,7 @@ Choose the annotation property which is most suitable, when labelling synonyms. 
   - **hasExactSynonym** may be asserted by a source, or linguistically
   - **hasBroadSynonym** is inclusive of, but not limited to, the main label (consider if it should be a superclass instead)
   - **hasNarrowSynonym** excludes aspects of the main label, but is fully enclosed by it (consider if it should be a subclass instead)
-  - **hasRelatedSynonym** should be used with great care, to ensure it is not in fact one of the other forms. It may be worth using if you have used much licence to infer a synonym from within a source in a way that you expect other collaborators could question (consider too whether you have actually stumbled on a new term needing creating); see also [para-synonymy](#para-synonymy)
+  - **hasRelatedSynonym** should be used with great care, to ensure it is not in fact one of the other forms. It may be worth using if you have used much licence to infer a synonym from within a source in a way that you expect other collaborators could question (consider too whether you have actually stumbled on a new term needing creating); see also [Para-synonymy](#para-synonymy)
 
 If you wish to promote a synonym to the main label, justify this and try to engage in discussion before implementing any change; remember also to relegate the label to a synonym.
 
@@ -223,7 +223,7 @@ The same word may have different meanings in different sources. The binomial sys
 
 ### Obsoletions
 
-It is not our role to judge the validity of an assertion. Before considering incompatibility, be sure you are not better served with a [Synonym](#synonyms).
+It is not our role to judge the validity of an assertion. Before considering incompatibility, be sure you are not better served with a [synonym](#synonyms).
 
 However, scientific ideas evolve and new ideas emerge which may be incompatible with former ones, and we need to be able to differentiate these assertions from one another. With sufficient consensus, an rdfs:Comment can be added to the effect that it is an INACTIVE TERM or a HISTORICAL TERM, simply meaning that it should not be used for ongoing annotation.  Where a concept is directly criticised in a source as obsolete, defunct, or a similar appelation, consider using the annotation property 'notes' to quote or summarise the criticism, along with 'dcterms:source'.
 
@@ -399,7 +399,12 @@ Bear in mind before adding the relation, that the class which is causally_downst
 #### Disjoints
 We can assume certain classes exclude each other, particularly if they are obviously opposites, and need not necessarily disjoint them. We can also add comments if necessary. But disjointing may have profound effects elsewhere in the ontology and we currently avoid them for ACTAN terms. With synonymy, actual homonyms can be separated using our binomial system. (NB: there should only ever be one term with any specific label, which will therefore be the primary binomen user - see [Synonyms](#synonyms).)
 
-#### Imports
+### Patterns
+A fuller label for one of these is a Dead Simple OWL Design Pattern (DOSDP). Every class created for ACTAN needs one. They aid with consistency and are part of quality control prior to a release.
+
+*This component of ACTAN is still in development and new terms can be contructed without one for the time being.*
+
+### Imports
 You can reference an imported class in this ontology. Missing terms can be searched for in [OLS](https://www.ebi.ac.uk/ols4) and considered for import; the most productive sources so far have been ENVO, PATO and UBERON. If it doesn't already exist, it could even be given an interim placeholder status provided that a New Term Request is going to be made to a relevant external ontology with a view to replacing our placeholder with the new term import.
 
 The new term must belong to an ontology which offers an appropriate Creative Commons license or equivalent permission. If an as yet unimported term is wanted, check our ontology's [Licenses](licences) page to see if the ontology is already covered. The license type will need to be referenced there before an edit can import one of its terms; only an editor with management's permission can approve the license of a new ontology for import to this ontology.
