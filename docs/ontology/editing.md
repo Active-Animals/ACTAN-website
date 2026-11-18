@@ -357,28 +357,28 @@ Delving under the surface of ontology engineering will reveal two basic types of
 
 #### Object Properties
 ##### has_part
-This should only be used when relating two pieces of data of the same type. In our case, one `<behaviour has_part 'another behaviour'>`, because both are occurrents. (Similarly, one anatomical structure may has_ part another one, because both are continuants.)
+This should only be used when relating two pieces of data of the same type. In our case, one \<behaviour has_part 'another behaviour'\>, because both are occurrents. (Similarly, one anatomical structure may has_ part another one, because both are continuants.)
 
 Bear in mind before adding the relation, that the class which has_ part another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **part_of** (which should not currently be used in our ontology).
 
 NB: A Reasoner in Desktop Protégé may not flag misuse of this object property, because it is inherently defined rather loosely, and needs additional axioms to raise flags.
 
 ##### has_participant
-This should only be used when relating an occurrent (e.g. a behaviour) to a continuant, and even then, only in one direction: `<behaviour has_participant continuant>`. It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
+This should only be used when relating an occurrent (e.g. a behaviour) to a continuant, and even then, only in one direction: \<behaviour has_participant continuant\>. It is strongly defined and Desktop Protégé's Reasoner should always flag an error.
 
 Bear in mind before adding the relation, that the class which has_participant another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **participates_in** (which should not currently be used in our ontology).
 
 ##### realizes
-This should only be used when an occurrent relates to a realizable entity, which is a special type of continuant: `<behaviour realizes 'realizable entity'>`.
+This should only be used when an occurrent relates to a realizable entity, which is a special type of continuant: \<behaviour realizes 'realizable entity'\>.
 
 Bear in mind before adding the relation, that the class which realizes another class must ALWAYS do so to be axiomatically correct. This is the inverse relation of **realized_in** (which should not currently be used in our ontology).
 
 ##### has_quality
 This is used frequently in our ontology, but needs to be used carefully, and only to our behaviour terms, not our disposition terms. There are three ways we can apply it:
 
-  1. **process characteristic (PATO:0001236)** - A special subset of imported continuant terms; these can be applied to occurrents. (Formally, the relationship should not work. However, some clever logical reasoning underlying the relationship allows it to work in just this special case.) These terms can be applied directly and are the easiest to use, although it has limited scope, having few available terms: `<behaviour has_quality 'process characteristic'>`.
-  2. **physical object characteristic (PATO:0001241)** - This subset of imported continuant terms can only be applied to continuants. It has significant utility to us because it has such a large range of available terms. However, because they cannot be applied directly to occurrents such as behaviour, an equivalence axiom needs to be constructed which first relates our behaviour to a material participant and then relates the participant to the characteristic: `<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic')))>`
-  3. **modifier characteristic (PATO:0102001)** - This short list of imported continuant terms are rarely going to be applied in an equivalence axiom to the characteristic being applied to our behaviour; they can not be applied directly to it: `<behaviour and (has_quality some ('process characteristic' and (has_quality some 'modifier characteristic')))>` or `<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic' and (has_quality some 'modifier characteristic'))))>`
+  1. **process characteristic (PATO:0001236)** - A special subset of imported continuant terms; these can be applied to occurrents. (Formally, the relationship should not work. However, some clever logical reasoning underlying the relationship allows it to work in just this special case.) These terms can be applied directly and are the easiest to use, although it has limited scope, having few available terms: \<behaviour has_quality 'process characteristic'\>.
+  2. **physical object characteristic (PATO:0001241)** - This subset of imported continuant terms can only be applied to continuants. It has significant utility to us because it has such a large range of available terms. However, because they cannot be applied directly to occurrents such as behaviour, an equivalence axiom needs to be constructed which first relates our behaviour to a material participant and then relates the participant to the characteristic: \<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic')))\>
+  3. **modifier characteristic (PATO:0102001)** - This short list of imported continuant terms are rarely going to be applied in an equivalence axiom to the characteristic being applied to our behaviour; they can not be applied directly to it: \<behaviour and (has_quality some ('process characteristic' and (has_quality some 'modifier characteristic')))\> or \<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic' and (has_quality some 'modifier characteristic'))))\>
 
 Bear in mind before adding the relation, that the class which has_quality another class must ALWAYS do so to be axiomatically correct. We will never see its inverse relation, as the aforesaid compromises are not simply reversible.
 
