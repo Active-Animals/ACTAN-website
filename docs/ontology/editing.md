@@ -87,16 +87,16 @@ All terms need:
 
 Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one MUST contain text notes for information about three key annotation types which would otherwise be obvious if we used nested annotations):
   - LABEL
-    - `<label>`
+    - \<label\>
     - AND
-      - `<year of publication>`
+      - \<year of publication\>
       - source e.g. DOI
-        -  AND `<partial exclusive quote>` if not exact
+        -  AND \<partial exclusive quote\> if not exact
     - OR
       - contributor ID e.g. ORCID
   - DEFINITION
     - 'Adapted' (see rdfs:isDefinedby below)
-      - `<full inclusive quote>`
+      - \<full inclusive quote\>
       - contributor ID e.g. ORCID
     - OR
     - 'Derived' (see dcterms:source below)
@@ -104,17 +104,17 @@ Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one M
       - contributor ID e.g. ORCID
     - OR
     - 'Implied' (see rdfs:isDefinedby below)
-      - `<full inclusive quote>`
+      - \<full inclusive quote\>
       - contributor ID e.g. ORCID
     - OR
     - 'Quoted' (see rdfs:isDefinedby below)
-      - `<full inclusive quote>`
+      - \<full inclusive quote\>
       - contributor ID e.g. ORCID
   - SYNONYMS (repeat for each one)
-    - `<label>`
-    - `<year of publication>`
+    - \<label\>
+    - \<year of publication\>
     - source e.g. DOI
-      -  AND `<partial exclusive quote>` if not exact
+      -  AND \<partial exclusive quote\> if not exact
 
 #### DISCRETIONARY
 As required, use:
