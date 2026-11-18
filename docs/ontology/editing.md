@@ -380,9 +380,14 @@ This is used frequently in our ontology, but needs to be used carefully, and onl
   2. **physical object characteristic (PATO:0001241)** - This subset of imported continuant terms can only be applied to continuants. It has significant utility to us because it has such a large range of available terms. However, because they cannot be applied directly to occurrents such as behaviour, an equivalence axiom needs to be constructed which first relates our behaviour to a material participant and then relates the participant to the characteristic: \<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic')))\>
   3. **modifier characteristic (PATO:0102001)** - This short list of imported continuant terms are rarely going to be applied in an equivalence axiom to the characteristic being applied to our behaviour; they can not be applied directly to it: \<behaviour and (has_quality some ('process characteristic' and (has_quality some 'modifier characteristic')))\> or \<behaviour and (has_participant some ('material entity' and (has_quality some 'physical object characteristic' and (has_quality some 'modifier characteristic'))))\>
 
-Bear in mind before adding the relation, that the class which has_quality another class must ALWAYS do so to be axiomatically correct. We will never see its inverse relation, as the aforesaid compromises are not simply reversible.
+Bear in mind before adding the relation, that the class which has_quality another class must ALWAYS do so to be axiomatically correct. We can see a related inverse relation below: characteristic_of.
 
 NB: see [Imports](#imports).
+
+##### characteristic_of
+This should only be used when describing a continuant in terms of some other continuant characteristic. In our case, it should only be applied to 'behavioural disposition' in order to relate it to groups or individuals: \<'behavioural disposition' characteristic_of 'organismal entity'\>
+
+Bear in mind before adding the relation, that the class which is characteristic_of another class must ALWAYS be so to be axiomatically correct. We can see a related inverse relation above: has_quality.
 
 #### Disjoints
 We can assume certain classes exclude each other, particularly if they are obviously opposites, and need not necessarily disjoint them. We can also add comments if necessary. But disjointing may have profound effects elsewhere in the ontology and we currently avoid them for ACTAN terms. With synonymy, actual homonyms can be separated using our binomial system. (NB: there should only ever be one term with any specific label, which will therefore be the primary binomen user - see [Synonyms](#synonyms).)
