@@ -389,6 +389,13 @@ This should only be used when describing a continuant in terms of some other con
 
 Bear in mind before adding the relation, that the class which is characteristic_of another class must ALWAYS be so to be axiomatically correct. We can see a related inverse relation above: has_quality.
 
+NB: see [Imports](#imports).
+
+##### causally_downstream_of
+This should only be used to relate a cause and its effect, either between two occurrents (as in our case involving behaviour processes) or between two material entities (as seen in some of our imported classes): \<behaviour causally_downstream_of behaviour\>
+
+Bear in mind before adding the relation, that the class which is causally_downstream_of another class must ALWAYS be so to be axiomatically correct. This is the inverse relation of **causally_upstream_of** (which should not currently be used in our ontology).
+
 #### Disjoints
 We can assume certain classes exclude each other, particularly if they are obviously opposites, and need not necessarily disjoint them. We can also add comments if necessary. But disjointing may have profound effects elsewhere in the ontology and we currently avoid them for ACTAN terms. With synonymy, actual homonyms can be separated using our binomial system. (NB: there should only ever be one term with any specific label, which will therefore be the primary binomen user - see [Synonyms](#synonyms).)
 
