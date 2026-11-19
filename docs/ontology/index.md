@@ -28,11 +28,11 @@ A secondary use case is that of professional researchers into animal behaviour. 
 >
 > <a href="https://github.com/jamesaoverton/obo-tutorial/blob/master/docs/obo.md">James A Overton</a>
 
-#### What is the ACTAN?
+#### What is the ACTAN ontology?
 
 This is an editable reference ontology for animal behaviours. It defines, labels, and interconnects potentially discernible actions, functional contexts, and dispositions. Using scientific references, it attempts to provide an internally consistent framework for classifying assertions which have been made about behaviours.
 
-#### What isn't the ACTAN?
+#### What isn't the ACTAN ontology?
 
 This is not a reference for potentially maladaptive behaviours, and excludes so-called abnormal, aberrant, deficient, pathological, diseased, phenotypic, or impaired behaviour. We acknowledge that some acute stress-related behaviours are adaptive and so include them, but that chronic stress leads to maladaptive or compensatory behaviours, which we therefore do not include.
 
@@ -54,11 +54,13 @@ NB: You may offer edits to this Introduction or the Editing page too, although a
 
 ### Where is it?
 
-The Active Animal's ontology structure and edit history is saved as a project in Stanford University's [WebProtégé](https://webprotege.stanford.edu) server. In this Alpha development phase, it is only visible to shared users who are accredited as collaborators. 
+The Active Animal's ontology structure and edit history is saved as a project in Stanford University's [WebProtégé](https://webprotege.stanford.edu) server. The previous release versions sre publicly visible if you register an account there.
 
-WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). A download of the current WebProtégé ACTAN project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software. But merging offline edits is not encouraged, because of the risk of overwriting someone else's online changes.
+WebProtégé allows collaborators to mutually edit the ontology (even simultaneously if needed). You will need to ask the ACTAN manager for access to the latest pre-release version which editors are working on. 
 
-In the Beta phase, we hope to provide an easier tool for users to locate appropriate labels for applying to their own observation records. By the end of the Alpha phase, we will regularly upload versions to [Bioportal](https://bioportal.bioontology.org) and this will provide an interim search solution to users without access to the WebProtégé project.
+A download of the current WebProtégé ACTAN project file (owl/rdf/xml), including all edits but no history, can also be viewed in more detail using the standalone desktop [Protégé](https://protege.stanford.edu) or other ontology software. But merging offline edits is not encouraged without the manager'sagreement, because of the risk of overwriting someone else's online changes.
+
+In the Beta phase, we hope to provide an easier tool in this website for users to locate appropriate labels for applying to their own observation records. For now, we regularly upload versions to [Bioportal](https://bioportal.bioontology.org/ontologies/ACTAN?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FACTAN_0000002) and this provides an interim search solution to users without access to the WebProtégé project.
 
 Unless the [Neuro-Behavioural Ontology](https://www.ebi.ac.uk/ols4/ontologies/nbo) (NBO) is resurrected or a better replacement is created, we hope that our ontology will one day be accepted as a reference ontology in the [OBO Foundry](https://obofoundry.org) ontology community.
 
@@ -66,7 +68,7 @@ Unless the [Neuro-Behavioural Ontology](https://www.ebi.ac.uk/ols4/ontologies/nb
 
 This project does not provide any storage for artefacts. Behavioural records are located in repositories in the form of example observations (ontologically referred to as Instances). iNaturalist provides the world's largest open data source of animal observations. Alongside this are a number of other open access online repositories for behavioural artefacts, such as xeno-canto. Most of these allow users to annotate or tag their uploads. Providing good labels for these annotations is our goal.
 
-The [Active Animals (AA)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Our ontology here provides the systematic source labels for the project's basic Observation Fields there. The AA project is also in its Alpha stage and interested collaborators are encouraged to message the project's own administration there.
+The [Active Animals (ACTAN)](https://www.inaturalist.org/projects/active-animals-aa) project at iNaturalist is a way for animal behavioural records to be aggregated systematically there. Our ontology here provides the systematic source labels for the project's basic Observation Fields there. The iNat project is also in its Alpha stage and interested collaborators are encouraged to message the project's own administration there.
 
 Restricted access resources are unlikely to be referenced by the ontology, except in justifiable cases. These may involve affordable entry or membership fees (e.g. behavioural artefacts like tools, nests, or fossils in museums, or videos which may be sourced in libraries, such as natural history documentaries on DVD). Some public animal behaviour resources also store accessible behavioural artefacts, such as [Elephant Voices](https://www.elephantvoices.org/studies-a-projects/the-elephant-ethogram.html).
 
