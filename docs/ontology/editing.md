@@ -107,6 +107,9 @@ Explanatory **rdfs:comment** (there may be others with *ad hoc* notes, but one M
       - \<full inclusive quote\>
       - contributor ID e.g. ORCID
     - OR
+    - 'Inferred' (for minor, mostly anatomical, subdivisions which are logical, although the wording is not drawn from a specific source - as is the case with 'Implied' above)
+      - contributor ID e.g. ORCID
+    - OR
     - 'Quoted' (see rdfs:isDefinedby below)
       - \<full inclusive quote\>
       - contributor ID e.g. ORCID
